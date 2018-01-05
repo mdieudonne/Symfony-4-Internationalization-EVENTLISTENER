@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="{{languageData}}">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}<link href="css/style.css" rel="stylesheet" type="text/css">{% endblock %}
+</head>
+<body>
+{% block body %}
+
+    <div class="ban">
+        <h1>{% trans from "messages" %}messages.goodmorning{% endtrans %}</h1>
+    </div>
+
+    <a href="http://www.symfony-challenge.dev">International</a>
+
+    <h2>Francais</h2>
+    <ul>
+        <li><a href="http://france.symfony-challenge.dev">fr-FR</a></li>
+        <li><a href="http://belgique.symfony-challenge.dev">fr-BE</a></li>
+        <li><a href="http://luxembourg.symfony-challenge.dev">fr-LU</a></li>
+        <li><a href="http://suisse.symfony-challenge.dev">fr-CH</a></li>
+    </ul>
+
+    <h2>English</h2>
+    <ul>
+        <li><a href="http://united-kingdom.symfony-challenge.dev">en-GB</a></li>
+        <li><a href="http://australia.symfony-challenge.dev">en-AU</a></li>
+        <li><a href="http://united-states.symfony-challenge.dev">en-US</a></li>
+        <li><a href="http://new-zealand.symfony-challenge.dev">en-NZ</a></li>
+        <li><a href="http://ireland.symfony-challenge.dev">en-IE</a></li>
+        <li><a href="http://canada.symfony-challenge.dev">en-CA</a></li>
+    </ul>
+
+    <h2>Deutsch</h2>
+    <ul>
+        <li><a href="http://deutschland.symfony-challenge.dev">de-DE</a></li>
+        <li><a href="http://schweiz.symfony-challenge.dev">de-CH</a></li>
+        <li><a href="http://osterreich.symfony-challenge.dev">de-AT</a></li>
+
+    </ul>
+
+    <h2>Nederlands</h2>
+    <ul>
+        <li><a href="http://nederland.symfony-challenge.dev">nl-NL</a></li>
+        <li><a href="http://belgie.symfony-challenge.dev">nl-BE</a></li>
+    </ul>
+
+{% endblock %}
+{% block javascripts %}{% endblock %}
+
+</body>
+</html>
