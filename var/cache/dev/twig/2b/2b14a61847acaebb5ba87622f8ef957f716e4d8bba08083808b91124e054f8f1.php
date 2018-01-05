@@ -19,11 +19,11 @@ class __TwigTemplate_dd95f984b61923c2cdd8ff37d97a4b6e26e74696038d1901f9372699039
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_d8c41fc31de43b933b5b4ba887193ef0046ce41c080cd2a3c4a46a652cd02e46 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_d8c41fc31de43b933b5b4ba887193ef0046ce41c080cd2a3c4a46a652cd02e46->enter($__internal_d8c41fc31de43b933b5b4ba887193ef0046ce41c080cd2a3c4a46a652cd02e46_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
+        $__internal_1ffdb7fb14e13e43698d9d13fff9643bd73944ab7ae9df9e30840bb3132d5740 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_1ffdb7fb14e13e43698d9d13fff9643bd73944ab7ae9df9e30840bb3132d5740->enter($__internal_1ffdb7fb14e13e43698d9d13fff9643bd73944ab7ae9df9e30840bb3132d5740_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
 
-        $__internal_0bb39be23ef8bc48efcf2f6d0dbfdca3b9e68e24b1fa83193c7815e6694c7b7a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_0bb39be23ef8bc48efcf2f6d0dbfdca3b9e68e24b1fa83193c7815e6694c7b7a->enter($__internal_0bb39be23ef8bc48efcf2f6d0dbfdca3b9e68e24b1fa83193c7815e6694c7b7a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
+        $__internal_3cdd9ca4069e1f2fecad8f35521f062991ce5c6c988c4262bae7374b2b18122c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_3cdd9ca4069e1f2fecad8f35521f062991ce5c6c988c4262bae7374b2b18122c->enter($__internal_3cdd9ca4069e1f2fecad8f35521f062991ce5c6c988c4262bae7374b2b18122c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -46,65 +46,65 @@ class __TwigTemplate_dd95f984b61923c2cdd8ff37d97a4b6e26e74696038d1901f9372699039
 ";
         // line 9
         $this->displayBlock('body', $context, $blocks);
-        // line 50
+        // line 73
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 51
+        // line 74
         echo "
 </body>
 </html>
 ";
         
-        $__internal_d8c41fc31de43b933b5b4ba887193ef0046ce41c080cd2a3c4a46a652cd02e46->leave($__internal_d8c41fc31de43b933b5b4ba887193ef0046ce41c080cd2a3c4a46a652cd02e46_prof);
+        $__internal_1ffdb7fb14e13e43698d9d13fff9643bd73944ab7ae9df9e30840bb3132d5740->leave($__internal_1ffdb7fb14e13e43698d9d13fff9643bd73944ab7ae9df9e30840bb3132d5740_prof);
 
         
-        $__internal_0bb39be23ef8bc48efcf2f6d0dbfdca3b9e68e24b1fa83193c7815e6694c7b7a->leave($__internal_0bb39be23ef8bc48efcf2f6d0dbfdca3b9e68e24b1fa83193c7815e6694c7b7a_prof);
+        $__internal_3cdd9ca4069e1f2fecad8f35521f062991ce5c6c988c4262bae7374b2b18122c->leave($__internal_3cdd9ca4069e1f2fecad8f35521f062991ce5c6c988c4262bae7374b2b18122c_prof);
 
     }
 
     // line 5
     public function block_title($context, array $blocks = array())
     {
-        $__internal_b676f7409b3fd81a1db007f8b5ceed9a6119863a586ae86fef0930a29a55a110 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_b676f7409b3fd81a1db007f8b5ceed9a6119863a586ae86fef0930a29a55a110->enter($__internal_b676f7409b3fd81a1db007f8b5ceed9a6119863a586ae86fef0930a29a55a110_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_b8373cb7c522d4272add34c5d8f7553829617f6b56f5222e3b2a2292b21ef955 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_b8373cb7c522d4272add34c5d8f7553829617f6b56f5222e3b2a2292b21ef955->enter($__internal_b8373cb7c522d4272add34c5d8f7553829617f6b56f5222e3b2a2292b21ef955_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
-        $__internal_fc5538cad305c4070dba480a08ea868a875cc9363eab8578560ed3d4dde98927 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_fc5538cad305c4070dba480a08ea868a875cc9363eab8578560ed3d4dde98927->enter($__internal_fc5538cad305c4070dba480a08ea868a875cc9363eab8578560ed3d4dde98927_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_a9266f1615c449b49db9173668050b178d2a50681985cbe85c18af5423008cc4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_a9266f1615c449b49db9173668050b178d2a50681985cbe85c18af5423008cc4->enter($__internal_a9266f1615c449b49db9173668050b178d2a50681985cbe85c18af5423008cc4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Welcome!";
         
-        $__internal_fc5538cad305c4070dba480a08ea868a875cc9363eab8578560ed3d4dde98927->leave($__internal_fc5538cad305c4070dba480a08ea868a875cc9363eab8578560ed3d4dde98927_prof);
+        $__internal_a9266f1615c449b49db9173668050b178d2a50681985cbe85c18af5423008cc4->leave($__internal_a9266f1615c449b49db9173668050b178d2a50681985cbe85c18af5423008cc4_prof);
 
         
-        $__internal_b676f7409b3fd81a1db007f8b5ceed9a6119863a586ae86fef0930a29a55a110->leave($__internal_b676f7409b3fd81a1db007f8b5ceed9a6119863a586ae86fef0930a29a55a110_prof);
+        $__internal_b8373cb7c522d4272add34c5d8f7553829617f6b56f5222e3b2a2292b21ef955->leave($__internal_b8373cb7c522d4272add34c5d8f7553829617f6b56f5222e3b2a2292b21ef955_prof);
 
     }
 
     // line 6
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_277634f919297d8121d5d5d262dd0074dd2e1516e5158b084c93c037a2a0db65 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_277634f919297d8121d5d5d262dd0074dd2e1516e5158b084c93c037a2a0db65->enter($__internal_277634f919297d8121d5d5d262dd0074dd2e1516e5158b084c93c037a2a0db65_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_0891ba1347599ae0c720d5de01b1773fde63c594ac79825b7d9801969b062d81 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_0891ba1347599ae0c720d5de01b1773fde63c594ac79825b7d9801969b062d81->enter($__internal_0891ba1347599ae0c720d5de01b1773fde63c594ac79825b7d9801969b062d81_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        $__internal_5335cfd704f2b15581af53704799f2b92e7f2ba5afb6bb8c5c62223f7c72fad1 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_5335cfd704f2b15581af53704799f2b92e7f2ba5afb6bb8c5c62223f7c72fad1->enter($__internal_5335cfd704f2b15581af53704799f2b92e7f2ba5afb6bb8c5c62223f7c72fad1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_1e513c3687fc3dc466ad9b5ae20ed9e28bc8a7bfbeb969e7c131880cbb7663c3 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_1e513c3687fc3dc466ad9b5ae20ed9e28bc8a7bfbeb969e7c131880cbb7663c3->enter($__internal_1e513c3687fc3dc466ad9b5ae20ed9e28bc8a7bfbeb969e7c131880cbb7663c3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         echo "<link href=\"css/style.css\" rel=\"stylesheet\" type=\"text/css\">";
         
-        $__internal_5335cfd704f2b15581af53704799f2b92e7f2ba5afb6bb8c5c62223f7c72fad1->leave($__internal_5335cfd704f2b15581af53704799f2b92e7f2ba5afb6bb8c5c62223f7c72fad1_prof);
+        $__internal_1e513c3687fc3dc466ad9b5ae20ed9e28bc8a7bfbeb969e7c131880cbb7663c3->leave($__internal_1e513c3687fc3dc466ad9b5ae20ed9e28bc8a7bfbeb969e7c131880cbb7663c3_prof);
 
         
-        $__internal_277634f919297d8121d5d5d262dd0074dd2e1516e5158b084c93c037a2a0db65->leave($__internal_277634f919297d8121d5d5d262dd0074dd2e1516e5158b084c93c037a2a0db65_prof);
+        $__internal_0891ba1347599ae0c720d5de01b1773fde63c594ac79825b7d9801969b062d81->leave($__internal_0891ba1347599ae0c720d5de01b1773fde63c594ac79825b7d9801969b062d81_prof);
 
     }
 
     // line 9
     public function block_body($context, array $blocks = array())
     {
-        $__internal_803177da73a2ffe516ef24543ef365c80dcef97639564238dfdaeb12bddf8420 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_803177da73a2ffe516ef24543ef365c80dcef97639564238dfdaeb12bddf8420->enter($__internal_803177da73a2ffe516ef24543ef365c80dcef97639564238dfdaeb12bddf8420_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_1d0b32a0ec534c5cb2212a3ab8e0b3931d1386e5486e9841df1eb4b69d70ecab = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_1d0b32a0ec534c5cb2212a3ab8e0b3931d1386e5486e9841df1eb4b69d70ecab->enter($__internal_1d0b32a0ec534c5cb2212a3ab8e0b3931d1386e5486e9841df1eb4b69d70ecab_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_fd8cde53d1cf15790190c4576d7a68cb49a25dbd65d798e16c775655c510cae6 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_fd8cde53d1cf15790190c4576d7a68cb49a25dbd65d798e16c775655c510cae6->enter($__internal_fd8cde53d1cf15790190c4576d7a68cb49a25dbd65d798e16c775655c510cae6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_afc201a585267d17cfb8c74e7273b1d8443cb26001ceeb68f02160d60d8c4bae = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_afc201a585267d17cfb8c74e7273b1d8443cb26001ceeb68f02160d60d8c4bae->enter($__internal_afc201a585267d17cfb8c74e7273b1d8443cb26001ceeb68f02160d60d8c4bae_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 10
         echo "
@@ -114,64 +114,87 @@ class __TwigTemplate_dd95f984b61923c2cdd8ff37d97a4b6e26e74696038d1901f9372699039
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->getTranslator()->trans("messages.goodmorning", array(), "messages");
         echo "</h1>
     </div>
+    <div class=\"content\">
+        <a href=\"http://www.symfony-challenge.dev\">International</a>
+        <br>
+        <br>
 
-    <a href=\"http://www.symfony-challenge.dev\">International</a>
+        <table>
+            <tr>
+                <th>Francais</th>
+                <th>English</th>
+                <th>Deutsch</th>
+                <th>Nederlands</th>
+            </tr>
 
-    <h2>Francais</h2>
-    <ul>
-        <li><a href=\"http://france.symfony-challenge.dev\">fr-FR</a></li>
-        <li><a href=\"http://belgique.symfony-challenge.dev\">fr-BE</a></li>
-        <li><a href=\"http://luxembourg.symfony-challenge.dev\">fr-LU</a></li>
-        <li><a href=\"http://suisse.symfony-challenge.dev\">fr-CH</a></li>
-    </ul>
+            <tr>
+                <td><a href=\"http://france.symfony-challenge.dev\">fr-FR</a></td>
+                <td><a href=\"http://united-kingdom.symfony-challenge.dev\">en-GB</a></td>
+                <td><a href=\"http://deutschland.symfony-challenge.dev\">de-DE</a></td>
+                <td><a href=\"http://nederland.symfony-challenge.dev\">nl-NL</a></td>
+            </tr>
+            <tr>
+                <td><a href=\"http://belgique.symfony-challenge.dev\">fr-BE</a></td>
+                <td><a href=\"http://australia.symfony-challenge.dev\">en-AU</a></td>
+                <td><a href=\"http://schweiz.symfony-challenge.dev\">de-CH</a></td>
+                <td><a href=\"http://belgie.symfony-challenge.dev\">nl-BE</a></td>
 
-    <h2>English</h2>
-    <ul>
-        <li><a href=\"http://united-kingdom.symfony-challenge.dev\">en-GB</a></li>
-        <li><a href=\"http://australia.symfony-challenge.dev\">en-AU</a></li>
-        <li><a href=\"http://united-states.symfony-challenge.dev\">en-US</a></li>
-        <li><a href=\"http://new-zealand.symfony-challenge.dev\">en-NZ</a></li>
-        <li><a href=\"http://ireland.symfony-challenge.dev\">en-IE</a></li>
-        <li><a href=\"http://canada.symfony-challenge.dev\">en-CA</a></li>
-    </ul>
+            </tr>
 
-    <h2>Deutsch</h2>
-    <ul>
-        <li><a href=\"http://deutschland.symfony-challenge.dev\">de-DE</a></li>
-        <li><a href=\"http://schweiz.symfony-challenge.dev\">de-CH</a></li>
-        <li><a href=\"http://osterreich.symfony-challenge.dev\">de-AT</a></li>
+            <tr>
+                <td><a href=\"http://luxembourg.symfony-challenge.dev\">fr-LU</a></td>
+                <td><a href=\"http://united-states.symfony-challenge.dev\">en-US</a></td>
+                <td><a href=\"http://osterreich.symfony-challenge.dev\">de-AT</a></td>
+                <td></td>
+            </tr>
 
-    </ul>
+            <tr>
+                <td><a href=\"http://suisse.symfony-challenge.dev\">fr-CH</a></td>
+                <td><a href=\"http://new-zealand.symfony-challenge.dev\">en-NZ</a></td>
+                <td></td>
+                <td></td>
+            </tr>
 
-    <h2>Nederlands</h2>
-    <ul>
-        <li><a href=\"http://nederland.symfony-challenge.dev\">nl-NL</a></li>
-        <li><a href=\"http://belgie.symfony-challenge.dev\">nl-BE</a></li>
-    </ul>
+            <tr>
+                <td></td>
+                <td><a href=\"http://ireland.symfony-challenge.dev\">en-IE</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href=\"http://canada.symfony-challenge.dev\">en-CA</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+        </table>
+    </div>
+
 
 ";
         
-        $__internal_fd8cde53d1cf15790190c4576d7a68cb49a25dbd65d798e16c775655c510cae6->leave($__internal_fd8cde53d1cf15790190c4576d7a68cb49a25dbd65d798e16c775655c510cae6_prof);
+        $__internal_afc201a585267d17cfb8c74e7273b1d8443cb26001ceeb68f02160d60d8c4bae->leave($__internal_afc201a585267d17cfb8c74e7273b1d8443cb26001ceeb68f02160d60d8c4bae_prof);
 
         
-        $__internal_803177da73a2ffe516ef24543ef365c80dcef97639564238dfdaeb12bddf8420->leave($__internal_803177da73a2ffe516ef24543ef365c80dcef97639564238dfdaeb12bddf8420_prof);
+        $__internal_1d0b32a0ec534c5cb2212a3ab8e0b3931d1386e5486e9841df1eb4b69d70ecab->leave($__internal_1d0b32a0ec534c5cb2212a3ab8e0b3931d1386e5486e9841df1eb4b69d70ecab_prof);
 
     }
 
-    // line 50
+    // line 73
     public function block_javascripts($context, array $blocks = array())
     {
-        $__internal_040f590dcdbeb71778d8589122248a3a9594db59f55cbd20518b63a1abd3aabc = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_040f590dcdbeb71778d8589122248a3a9594db59f55cbd20518b63a1abd3aabc->enter($__internal_040f590dcdbeb71778d8589122248a3a9594db59f55cbd20518b63a1abd3aabc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_e5a3306f2f483d437e07dff8dbb76624df71fae6f36f3dc7bab72d850b60ebe7 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_e5a3306f2f483d437e07dff8dbb76624df71fae6f36f3dc7bab72d850b60ebe7->enter($__internal_e5a3306f2f483d437e07dff8dbb76624df71fae6f36f3dc7bab72d850b60ebe7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
-        $__internal_1d3f2d190927e8ba6ccc80599a099e550defe39da5b4a71d387ea87e8c4eaadb = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_1d3f2d190927e8ba6ccc80599a099e550defe39da5b4a71d387ea87e8c4eaadb->enter($__internal_1d3f2d190927e8ba6ccc80599a099e550defe39da5b4a71d387ea87e8c4eaadb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
-
-        
-        $__internal_1d3f2d190927e8ba6ccc80599a099e550defe39da5b4a71d387ea87e8c4eaadb->leave($__internal_1d3f2d190927e8ba6ccc80599a099e550defe39da5b4a71d387ea87e8c4eaadb_prof);
+        $__internal_d4783b48d65049d804e78cbf1277ea003430843dba700dc8e7fb09e1a166e7eb = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_d4783b48d65049d804e78cbf1277ea003430843dba700dc8e7fb09e1a166e7eb->enter($__internal_d4783b48d65049d804e78cbf1277ea003430843dba700dc8e7fb09e1a166e7eb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
         
-        $__internal_040f590dcdbeb71778d8589122248a3a9594db59f55cbd20518b63a1abd3aabc->leave($__internal_040f590dcdbeb71778d8589122248a3a9594db59f55cbd20518b63a1abd3aabc_prof);
+        $__internal_d4783b48d65049d804e78cbf1277ea003430843dba700dc8e7fb09e1a166e7eb->leave($__internal_d4783b48d65049d804e78cbf1277ea003430843dba700dc8e7fb09e1a166e7eb_prof);
+
+        
+        $__internal_e5a3306f2f483d437e07dff8dbb76624df71fae6f36f3dc7bab72d850b60ebe7->leave($__internal_e5a3306f2f483d437e07dff8dbb76624df71fae6f36f3dc7bab72d850b60ebe7_prof);
 
     }
 
@@ -187,7 +210,7 @@ class __TwigTemplate_dd95f984b61923c2cdd8ff37d97a4b6e26e74696038d1901f9372699039
 
     public function getDebugInfo()
     {
-        return array (  162 => 50,  114 => 12,  110 => 10,  101 => 9,  83 => 6,  65 => 5,  52 => 51,  50 => 50,  48 => 9,  44 => 7,  42 => 6,  38 => 5,  32 => 2,  29 => 1,);
+        return array (  185 => 73,  114 => 12,  110 => 10,  101 => 9,  83 => 6,  65 => 5,  52 => 74,  50 => 73,  48 => 9,  44 => 7,  42 => 6,  38 => 5,  32 => 2,  29 => 1,);
     }
 
     public function getSourceContext()
@@ -205,40 +228,63 @@ class __TwigTemplate_dd95f984b61923c2cdd8ff37d97a4b6e26e74696038d1901f9372699039
     <div class=\"ban\">
         <h1>{% trans from \"messages\" %}messages.goodmorning{% endtrans %}</h1>
     </div>
+    <div class=\"content\">
+        <a href=\"http://www.symfony-challenge.dev\">International</a>
+        <br>
+        <br>
 
-    <a href=\"http://www.symfony-challenge.dev\">International</a>
+        <table>
+            <tr>
+                <th>Francais</th>
+                <th>English</th>
+                <th>Deutsch</th>
+                <th>Nederlands</th>
+            </tr>
 
-    <h2>Francais</h2>
-    <ul>
-        <li><a href=\"http://france.symfony-challenge.dev\">fr-FR</a></li>
-        <li><a href=\"http://belgique.symfony-challenge.dev\">fr-BE</a></li>
-        <li><a href=\"http://luxembourg.symfony-challenge.dev\">fr-LU</a></li>
-        <li><a href=\"http://suisse.symfony-challenge.dev\">fr-CH</a></li>
-    </ul>
+            <tr>
+                <td><a href=\"http://france.symfony-challenge.dev\">fr-FR</a></td>
+                <td><a href=\"http://united-kingdom.symfony-challenge.dev\">en-GB</a></td>
+                <td><a href=\"http://deutschland.symfony-challenge.dev\">de-DE</a></td>
+                <td><a href=\"http://nederland.symfony-challenge.dev\">nl-NL</a></td>
+            </tr>
+            <tr>
+                <td><a href=\"http://belgique.symfony-challenge.dev\">fr-BE</a></td>
+                <td><a href=\"http://australia.symfony-challenge.dev\">en-AU</a></td>
+                <td><a href=\"http://schweiz.symfony-challenge.dev\">de-CH</a></td>
+                <td><a href=\"http://belgie.symfony-challenge.dev\">nl-BE</a></td>
 
-    <h2>English</h2>
-    <ul>
-        <li><a href=\"http://united-kingdom.symfony-challenge.dev\">en-GB</a></li>
-        <li><a href=\"http://australia.symfony-challenge.dev\">en-AU</a></li>
-        <li><a href=\"http://united-states.symfony-challenge.dev\">en-US</a></li>
-        <li><a href=\"http://new-zealand.symfony-challenge.dev\">en-NZ</a></li>
-        <li><a href=\"http://ireland.symfony-challenge.dev\">en-IE</a></li>
-        <li><a href=\"http://canada.symfony-challenge.dev\">en-CA</a></li>
-    </ul>
+            </tr>
 
-    <h2>Deutsch</h2>
-    <ul>
-        <li><a href=\"http://deutschland.symfony-challenge.dev\">de-DE</a></li>
-        <li><a href=\"http://schweiz.symfony-challenge.dev\">de-CH</a></li>
-        <li><a href=\"http://osterreich.symfony-challenge.dev\">de-AT</a></li>
+            <tr>
+                <td><a href=\"http://luxembourg.symfony-challenge.dev\">fr-LU</a></td>
+                <td><a href=\"http://united-states.symfony-challenge.dev\">en-US</a></td>
+                <td><a href=\"http://osterreich.symfony-challenge.dev\">de-AT</a></td>
+                <td></td>
+            </tr>
 
-    </ul>
+            <tr>
+                <td><a href=\"http://suisse.symfony-challenge.dev\">fr-CH</a></td>
+                <td><a href=\"http://new-zealand.symfony-challenge.dev\">en-NZ</a></td>
+                <td></td>
+                <td></td>
+            </tr>
 
-    <h2>Nederlands</h2>
-    <ul>
-        <li><a href=\"http://nederland.symfony-challenge.dev\">nl-NL</a></li>
-        <li><a href=\"http://belgie.symfony-challenge.dev\">nl-BE</a></li>
-    </ul>
+            <tr>
+                <td></td>
+                <td><a href=\"http://ireland.symfony-challenge.dev\">en-IE</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href=\"http://canada.symfony-challenge.dev\">en-CA</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+        </table>
+    </div>
+
 
 {% endblock %}
 {% block javascripts %}{% endblock %}
