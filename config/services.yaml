@@ -32,3 +32,4 @@ services:
 
         tags:
             - { name: kernel.event_listener, event: kernel.request, priority: 25}
+        arguments: ["@twig","@doctrine.orm.entity_manager"]

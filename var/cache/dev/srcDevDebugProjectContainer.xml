@@ -1,41 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
   <parameters>
-    <parameter key="kernel.root_dir">/media/simplon/virtual-hosts/symfony-challenge/src</parameter>
-    <parameter key="kernel.project_dir">/media/simplon/virtual-hosts/symfony-challenge</parameter>
+    <parameter key="kernel.root_dir">/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/src</parameter>
+    <parameter key="kernel.project_dir">/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER</parameter>
     <parameter key="kernel.environment">dev</parameter>
     <parameter key="kernel.debug">true</parameter>
     <parameter key="kernel.name">src</parameter>
-    <parameter key="kernel.cache_dir">/media/simplon/virtual-hosts/symfony-challenge/var/cache/dev</parameter>
-    <parameter key="kernel.logs_dir">/media/simplon/virtual-hosts/symfony-challenge/var/log</parameter>
+    <parameter key="kernel.cache_dir">/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/var/cache/dev</parameter>
+    <parameter key="kernel.logs_dir">/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/var/log</parameter>
     <parameter key="kernel.bundles" type="collection">
       <parameter key="FrameworkBundle">Symfony\Bundle\FrameworkBundle\FrameworkBundle</parameter>
       <parameter key="SensioFrameworkExtraBundle">Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle</parameter>
       <parameter key="TwigBundle">Symfony\Bundle\TwigBundle\TwigBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
+      <parameter key="MakerBundle">Symfony\Bundle\MakerBundle\MakerBundle</parameter>
+      <parameter key="DoctrineCacheBundle">Doctrine\Bundle\DoctrineCacheBundle\DoctrineCacheBundle</parameter>
+      <parameter key="DoctrineBundle">Doctrine\Bundle\DoctrineBundle\DoctrineBundle</parameter>
+      <parameter key="DoctrineMigrationsBundle">Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle</parameter>
     </parameter>
     <parameter key="kernel.bundles_metadata" type="collection">
       <parameter key="FrameworkBundle" type="collection">
-        <parameter key="path">/media/simplon/virtual-hosts/symfony-challenge/vendor/symfony/framework-bundle</parameter>
+        <parameter key="path">/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/vendor/symfony/framework-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\FrameworkBundle</parameter>
       </parameter>
       <parameter key="SensioFrameworkExtraBundle" type="collection">
-        <parameter key="path">/media/simplon/virtual-hosts/symfony-challenge/vendor/sensio/framework-extra-bundle</parameter>
+        <parameter key="path">/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/vendor/sensio/framework-extra-bundle</parameter>
         <parameter key="namespace">Sensio\Bundle\FrameworkExtraBundle</parameter>
       </parameter>
       <parameter key="TwigBundle" type="collection">
-        <parameter key="path">/media/simplon/virtual-hosts/symfony-challenge/vendor/symfony/twig-bundle</parameter>
+        <parameter key="path">/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/vendor/symfony/twig-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\TwigBundle</parameter>
       </parameter>
       <parameter key="WebProfilerBundle" type="collection">
-        <parameter key="path">/media/simplon/virtual-hosts/symfony-challenge/vendor/symfony/web-profiler-bundle</parameter>
+        <parameter key="path">/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/vendor/symfony/web-profiler-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\WebProfilerBundle</parameter>
+      </parameter>
+      <parameter key="MakerBundle" type="collection">
+        <parameter key="path">/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/vendor/symfony/maker-bundle/src</parameter>
+        <parameter key="namespace">Symfony\Bundle\MakerBundle</parameter>
+      </parameter>
+      <parameter key="DoctrineCacheBundle" type="collection">
+        <parameter key="path">/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/vendor/doctrine/doctrine-cache-bundle</parameter>
+        <parameter key="namespace">Doctrine\Bundle\DoctrineCacheBundle</parameter>
+      </parameter>
+      <parameter key="DoctrineBundle" type="collection">
+        <parameter key="path">/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/vendor/doctrine/doctrine-bundle</parameter>
+        <parameter key="namespace">Doctrine\Bundle\DoctrineBundle</parameter>
+      </parameter>
+      <parameter key="DoctrineMigrationsBundle" type="collection">
+        <parameter key="path">/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/vendor/doctrine/doctrine-migrations-bundle</parameter>
+        <parameter key="namespace">Doctrine\Bundle\MigrationsBundle</parameter>
       </parameter>
     </parameter>
     <parameter key="kernel.charset">UTF-8</parameter>
     <parameter key="kernel.container_class">srcDevDebugProjectContainer</parameter>
     <parameter key="container.autowiring.strict_mode">true</parameter>
     <parameter key="container.dumper.inline_class_loader">true</parameter>
+    <parameter key="env(DATABASE_URL)"></parameter>
     <parameter key="locale">en</parameter>
     <parameter key="fragment.renderer.hinclude.global_template"></parameter>
     <parameter key="fragment.path">/_fragment</parameter>
@@ -46,12 +67,12 @@
     <parameter key="templating.helper.code.file_link_format">null</parameter>
     <parameter key="debug.file_link_format">null</parameter>
     <parameter key="translator.logging">true</parameter>
-    <parameter key="translator.default_path">/media/simplon/virtual-hosts/symfony-challenge/translations</parameter>
+    <parameter key="translator.default_path">/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/translations</parameter>
     <parameter key="profiler_listener.only_exceptions">false</parameter>
     <parameter key="profiler_listener.only_master_requests">false</parameter>
-    <parameter key="profiler.storage.dsn">file:/media/simplon/virtual-hosts/symfony-challenge/var/cache/dev/profiler</parameter>
+    <parameter key="profiler.storage.dsn">file:/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/var/cache/dev/profiler</parameter>
     <parameter key="debug.error_handler.throw_at">-1</parameter>
-    <parameter key="debug.container.dump">/media/simplon/virtual-hosts/symfony-challenge/var/cache/dev/srcDevDebugProjectContainer.xml</parameter>
+    <parameter key="debug.container.dump">/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/var/cache/dev/srcDevDebugProjectContainer.xml</parameter>
     <parameter key="router.request_context.host">localhost</parameter>
     <parameter key="router.request_context.scheme">http</parameter>
     <parameter key="router.request_context.base_url"></parameter>
@@ -63,9 +84,124 @@
     <parameter key="twig.form.resources" type="collection">
       <parameter>form_div_layout.html.twig</parameter>
     </parameter>
-    <parameter key="twig.default_path">/media/simplon/virtual-hosts/symfony-challenge/templates</parameter>
+    <parameter key="twig.default_path">/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/templates</parameter>
     <parameter key="web_profiler.debug_toolbar.intercept_redirects">false</parameter>
     <parameter key="web_profiler.debug_toolbar.mode">2</parameter>
+    <parameter key="doctrine_cache.apc.class">Doctrine\Common\Cache\ApcCache</parameter>
+    <parameter key="doctrine_cache.apcu.class">Doctrine\Common\Cache\ApcuCache</parameter>
+    <parameter key="doctrine_cache.array.class">Doctrine\Common\Cache\ArrayCache</parameter>
+    <parameter key="doctrine_cache.chain.class">Doctrine\Common\Cache\ChainCache</parameter>
+    <parameter key="doctrine_cache.couchbase.class">Doctrine\Common\Cache\CouchbaseCache</parameter>
+    <parameter key="doctrine_cache.couchbase.connection.class">Couchbase</parameter>
+    <parameter key="doctrine_cache.couchbase.hostnames">localhost:8091</parameter>
+    <parameter key="doctrine_cache.file_system.class">Doctrine\Common\Cache\FilesystemCache</parameter>
+    <parameter key="doctrine_cache.php_file.class">Doctrine\Common\Cache\PhpFileCache</parameter>
+    <parameter key="doctrine_cache.memcache.class">Doctrine\Common\Cache\MemcacheCache</parameter>
+    <parameter key="doctrine_cache.memcache.connection.class">Memcache</parameter>
+    <parameter key="doctrine_cache.memcache.host">localhost</parameter>
+    <parameter key="doctrine_cache.memcache.port">11211</parameter>
+    <parameter key="doctrine_cache.memcached.class">Doctrine\Common\Cache\MemcachedCache</parameter>
+    <parameter key="doctrine_cache.memcached.connection.class">Memcached</parameter>
+    <parameter key="doctrine_cache.memcached.host">localhost</parameter>
+    <parameter key="doctrine_cache.memcached.port">11211</parameter>
+    <parameter key="doctrine_cache.mongodb.class">Doctrine\Common\Cache\MongoDBCache</parameter>
+    <parameter key="doctrine_cache.mongodb.collection.class">MongoCollection</parameter>
+    <parameter key="doctrine_cache.mongodb.connection.class">MongoClient</parameter>
+    <parameter key="doctrine_cache.mongodb.server">localhost:27017</parameter>
+    <parameter key="doctrine_cache.predis.client.class">Predis\Client</parameter>
+    <parameter key="doctrine_cache.predis.scheme">tcp</parameter>
+    <parameter key="doctrine_cache.predis.host">localhost</parameter>
+    <parameter key="doctrine_cache.predis.port">6379</parameter>
+    <parameter key="doctrine_cache.redis.class">Doctrine\Common\Cache\RedisCache</parameter>
+    <parameter key="doctrine_cache.redis.connection.class">Redis</parameter>
+    <parameter key="doctrine_cache.redis.host">localhost</parameter>
+    <parameter key="doctrine_cache.redis.port">6379</parameter>
+    <parameter key="doctrine_cache.riak.class">Doctrine\Common\Cache\RiakCache</parameter>
+    <parameter key="doctrine_cache.riak.bucket.class">Riak\Bucket</parameter>
+    <parameter key="doctrine_cache.riak.connection.class">Riak\Connection</parameter>
+    <parameter key="doctrine_cache.riak.bucket_property_list.class">Riak\BucketPropertyList</parameter>
+    <parameter key="doctrine_cache.riak.host">localhost</parameter>
+    <parameter key="doctrine_cache.riak.port">8087</parameter>
+    <parameter key="doctrine_cache.sqlite3.class">Doctrine\Common\Cache\SQLite3Cache</parameter>
+    <parameter key="doctrine_cache.sqlite3.connection.class">SQLite3</parameter>
+    <parameter key="doctrine_cache.void.class">Doctrine\Common\Cache\VoidCache</parameter>
+    <parameter key="doctrine_cache.wincache.class">Doctrine\Common\Cache\WinCacheCache</parameter>
+    <parameter key="doctrine_cache.xcache.class">Doctrine\Common\Cache\XcacheCache</parameter>
+    <parameter key="doctrine_cache.zenddata.class">Doctrine\Common\Cache\ZendDataCache</parameter>
+    <parameter key="doctrine_cache.security.acl.cache.class">Doctrine\Bundle\DoctrineCacheBundle\Acl\Model\AclCache</parameter>
+    <parameter key="doctrine.dbal.logger.chain.class">Doctrine\DBAL\Logging\LoggerChain</parameter>
+    <parameter key="doctrine.dbal.logger.profiling.class">Doctrine\DBAL\Logging\DebugStack</parameter>
+    <parameter key="doctrine.dbal.logger.class">Symfony\Bridge\Doctrine\Logger\DbalLogger</parameter>
+    <parameter key="doctrine.dbal.configuration.class">Doctrine\DBAL\Configuration</parameter>
+    <parameter key="doctrine.data_collector.class">Doctrine\Bundle\DoctrineBundle\DataCollector\DoctrineDataCollector</parameter>
+    <parameter key="doctrine.dbal.connection.event_manager.class">Symfony\Bridge\Doctrine\ContainerAwareEventManager</parameter>
+    <parameter key="doctrine.dbal.connection_factory.class">Doctrine\Bundle\DoctrineBundle\ConnectionFactory</parameter>
+    <parameter key="doctrine.dbal.events.mysql_session_init.class">Doctrine\DBAL\Event\Listeners\MysqlSessionInit</parameter>
+    <parameter key="doctrine.dbal.events.oracle_session_init.class">Doctrine\DBAL\Event\Listeners\OracleSessionInit</parameter>
+    <parameter key="doctrine.class">Doctrine\Bundle\DoctrineBundle\Registry</parameter>
+    <parameter key="doctrine.entity_managers" type="collection">
+      <parameter key="default">doctrine.orm.default_entity_manager</parameter>
+    </parameter>
+    <parameter key="doctrine.default_entity_manager">default</parameter>
+    <parameter key="doctrine.dbal.connection_factory.types" type="collection"/>
+    <parameter key="doctrine.connections" type="collection">
+      <parameter key="default">doctrine.dbal.default_connection</parameter>
+    </parameter>
+    <parameter key="doctrine.default_connection">default</parameter>
+    <parameter key="doctrine.orm.configuration.class">Doctrine\ORM\Configuration</parameter>
+    <parameter key="doctrine.orm.entity_manager.class">Doctrine\ORM\EntityManager</parameter>
+    <parameter key="doctrine.orm.manager_configurator.class">Doctrine\Bundle\DoctrineBundle\ManagerConfigurator</parameter>
+    <parameter key="doctrine.orm.cache.array.class">Doctrine\Common\Cache\ArrayCache</parameter>
+    <parameter key="doctrine.orm.cache.apc.class">Doctrine\Common\Cache\ApcCache</parameter>
+    <parameter key="doctrine.orm.cache.memcache.class">Doctrine\Common\Cache\MemcacheCache</parameter>
+    <parameter key="doctrine.orm.cache.memcache_host">localhost</parameter>
+    <parameter key="doctrine.orm.cache.memcache_port">11211</parameter>
+    <parameter key="doctrine.orm.cache.memcache_instance.class">Memcache</parameter>
+    <parameter key="doctrine.orm.cache.memcached.class">Doctrine\Common\Cache\MemcachedCache</parameter>
+    <parameter key="doctrine.orm.cache.memcached_host">localhost</parameter>
+    <parameter key="doctrine.orm.cache.memcached_port">11211</parameter>
+    <parameter key="doctrine.orm.cache.memcached_instance.class">Memcached</parameter>
+    <parameter key="doctrine.orm.cache.redis.class">Doctrine\Common\Cache\RedisCache</parameter>
+    <parameter key="doctrine.orm.cache.redis_host">localhost</parameter>
+    <parameter key="doctrine.orm.cache.redis_port">6379</parameter>
+    <parameter key="doctrine.orm.cache.redis_instance.class">Redis</parameter>
+    <parameter key="doctrine.orm.cache.xcache.class">Doctrine\Common\Cache\XcacheCache</parameter>
+    <parameter key="doctrine.orm.cache.wincache.class">Doctrine\Common\Cache\WinCacheCache</parameter>
+    <parameter key="doctrine.orm.cache.zenddata.class">Doctrine\Common\Cache\ZendDataCache</parameter>
+    <parameter key="doctrine.orm.metadata.driver_chain.class">Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain</parameter>
+    <parameter key="doctrine.orm.metadata.annotation.class">Doctrine\ORM\Mapping\Driver\AnnotationDriver</parameter>
+    <parameter key="doctrine.orm.metadata.xml.class">Doctrine\ORM\Mapping\Driver\SimplifiedXmlDriver</parameter>
+    <parameter key="doctrine.orm.metadata.yml.class">Doctrine\ORM\Mapping\Driver\SimplifiedYamlDriver</parameter>
+    <parameter key="doctrine.orm.metadata.php.class">Doctrine\ORM\Mapping\Driver\PHPDriver</parameter>
+    <parameter key="doctrine.orm.metadata.staticphp.class">Doctrine\ORM\Mapping\Driver\StaticPHPDriver</parameter>
+    <parameter key="doctrine.orm.proxy_cache_warmer.class">Symfony\Bridge\Doctrine\CacheWarmer\ProxyCacheWarmer</parameter>
+    <parameter key="form.type_guesser.doctrine.class">Symfony\Bridge\Doctrine\Form\DoctrineOrmTypeGuesser</parameter>
+    <parameter key="doctrine.orm.validator.unique.class">Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntityValidator</parameter>
+    <parameter key="doctrine.orm.validator_initializer.class">Symfony\Bridge\Doctrine\Validator\DoctrineInitializer</parameter>
+    <parameter key="doctrine.orm.security.user.provider.class">Symfony\Bridge\Doctrine\Security\User\EntityUserProvider</parameter>
+    <parameter key="doctrine.orm.listeners.resolve_target_entity.class">Doctrine\ORM\Tools\ResolveTargetEntityListener</parameter>
+    <parameter key="doctrine.orm.listeners.attach_entity_listeners.class">Doctrine\ORM\Tools\AttachEntityListenersListener</parameter>
+    <parameter key="doctrine.orm.naming_strategy.default.class">Doctrine\ORM\Mapping\DefaultNamingStrategy</parameter>
+    <parameter key="doctrine.orm.naming_strategy.underscore.class">Doctrine\ORM\Mapping\UnderscoreNamingStrategy</parameter>
+    <parameter key="doctrine.orm.quote_strategy.default.class">Doctrine\ORM\Mapping\DefaultQuoteStrategy</parameter>
+    <parameter key="doctrine.orm.quote_strategy.ansi.class">Doctrine\ORM\Mapping\AnsiQuoteStrategy</parameter>
+    <parameter key="doctrine.orm.entity_listener_resolver.class">Doctrine\Bundle\DoctrineBundle\Mapping\ContainerAwareEntityListenerResolver</parameter>
+    <parameter key="doctrine.orm.second_level_cache.default_cache_factory.class">Doctrine\ORM\Cache\DefaultCacheFactory</parameter>
+    <parameter key="doctrine.orm.second_level_cache.default_region.class">Doctrine\ORM\Cache\Region\DefaultRegion</parameter>
+    <parameter key="doctrine.orm.second_level_cache.filelock_region.class">Doctrine\ORM\Cache\Region\FileLockRegion</parameter>
+    <parameter key="doctrine.orm.second_level_cache.logger_chain.class">Doctrine\ORM\Cache\Logging\CacheLoggerChain</parameter>
+    <parameter key="doctrine.orm.second_level_cache.logger_statistics.class">Doctrine\ORM\Cache\Logging\StatisticsCacheLogger</parameter>
+    <parameter key="doctrine.orm.second_level_cache.cache_configuration.class">Doctrine\ORM\Cache\CacheConfiguration</parameter>
+    <parameter key="doctrine.orm.second_level_cache.regions_configuration.class">Doctrine\ORM\Cache\RegionsConfiguration</parameter>
+    <parameter key="doctrine.orm.auto_generate_proxy_classes">true</parameter>
+    <parameter key="doctrine.orm.proxy_dir">/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/var/cache/dev/doctrine/orm/Proxies</parameter>
+    <parameter key="doctrine.orm.proxy_namespace">Proxies</parameter>
+    <parameter key="doctrine_migrations.dir_name">/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/src/Migrations</parameter>
+    <parameter key="doctrine_migrations.namespace">DoctrineMigrations</parameter>
+    <parameter key="doctrine_migrations.table_name">migration_versions</parameter>
+    <parameter key="doctrine_migrations.name">Application Migrations</parameter>
+    <parameter key="doctrine_migrations.custom_template">null</parameter>
+    <parameter key="doctrine_migrations.organize_migrations">false</parameter>
     <parameter key="data_collector.templates" type="collection">
       <parameter key="data_collector.request" type="collection">
         <parameter>request</parameter>
@@ -111,52 +247,27 @@
         <parameter>twig</parameter>
         <parameter>@WebProfiler/Collector/twig.html.twig</parameter>
       </parameter>
+      <parameter key="data_collector.doctrine" type="collection">
+        <parameter>db</parameter>
+        <parameter>@Doctrine/Collector/db.html.twig</parameter>
+      </parameter>
       <parameter key="data_collector.config" type="collection">
         <parameter>config</parameter>
         <parameter>@WebProfiler/Collector/config.html.twig</parameter>
       </parameter>
     </parameter>
     <parameter key="console.command.ids" type="collection">
-      <parameter key="console.command.symfony_bundle_frameworkbundle_command_aboutcommand">console.command.about</parameter>
-      <parameter key="console.command.symfony_bundle_frameworkbundle_command_assetsinstallcommand">console.command.assets_install</parameter>
-      <parameter key="console.command.symfony_bundle_frameworkbundle_command_cacheclearcommand">console.command.cache_clear</parameter>
-      <parameter key="console.command.symfony_bundle_frameworkbundle_command_cachepoolclearcommand">console.command.cache_pool_clear</parameter>
-      <parameter key="console.command.symfony_bundle_frameworkbundle_command_cachepoolprunecommand">console.command.cache_pool_prune</parameter>
-      <parameter key="console.command.symfony_bundle_frameworkbundle_command_cachewarmupcommand">console.command.cache_warmup</parameter>
-      <parameter key="console.command.symfony_bundle_frameworkbundle_command_configdebugcommand">console.command.config_debug</parameter>
-      <parameter key="console.command.symfony_bundle_frameworkbundle_command_configdumpreferencecommand">console.command.config_dump_reference</parameter>
-      <parameter key="console.command.symfony_bundle_frameworkbundle_command_containerdebugcommand">console.command.container_debug</parameter>
-      <parameter key="console.command.symfony_bundle_frameworkbundle_command_debugautowiringcommand">console.command.debug_autowiring</parameter>
-      <parameter key="console.command.symfony_bundle_frameworkbundle_command_eventdispatcherdebugcommand">console.command.event_dispatcher_debug</parameter>
-      <parameter key="console.command.symfony_bundle_frameworkbundle_command_routerdebugcommand">console.command.router_debug</parameter>
-      <parameter key="console.command.symfony_bundle_frameworkbundle_command_routermatchcommand">console.command.router_match</parameter>
-      <parameter key="console.command.symfony_bundle_frameworkbundle_command_translationdebugcommand">console.command.translation_debug</parameter>
-      <parameter key="console.command.symfony_bundle_frameworkbundle_command_translationupdatecommand">console.command.translation_update</parameter>
-      <parameter key="console.command.symfony_bundle_frameworkbundle_command_xlifflintcommand">console.command.xliff_lint</parameter>
-      <parameter key="console.command.symfony_bundle_frameworkbundle_command_yamllintcommand">console.command.yaml_lint</parameter>
-      <parameter key="console.command.symfony_bridge_twig_command_debugcommand">twig.command.debug</parameter>
-      <parameter key="console.command.symfony_bundle_twigbundle_command_lintcommand">twig.command.lint</parameter>
-    </parameter>
-    <parameter key="console.lazy_command.ids" type="collection">
-      <parameter key="console.command.about">true</parameter>
-      <parameter key="console.command.assets_install">true</parameter>
-      <parameter key="console.command.cache_clear">true</parameter>
-      <parameter key="console.command.cache_pool_clear">true</parameter>
-      <parameter key="console.command.cache_pool_prune">true</parameter>
-      <parameter key="console.command.cache_warmup">true</parameter>
-      <parameter key="console.command.config_debug">true</parameter>
-      <parameter key="console.command.config_dump_reference">true</parameter>
-      <parameter key="console.command.container_debug">true</parameter>
-      <parameter key="console.command.debug_autowiring">true</parameter>
-      <parameter key="console.command.event_dispatcher_debug">true</parameter>
-      <parameter key="console.command.router_debug">true</parameter>
-      <parameter key="console.command.router_match">true</parameter>
-      <parameter key="console.command.translation_debug">true</parameter>
-      <parameter key="console.command.translation_update">true</parameter>
-      <parameter key="console.command.xliff_lint">true</parameter>
-      <parameter key="console.command.yaml_lint">true</parameter>
-      <parameter key="twig.command.debug">true</parameter>
-      <parameter key="twig.command.lint">true</parameter>
+      <parameter>console.command.public_alias.doctrine_cache.contains_command</parameter>
+      <parameter>console.command.public_alias.doctrine_cache.delete_command</parameter>
+      <parameter>console.command.public_alias.doctrine_cache.flush_command</parameter>
+      <parameter>console.command.public_alias.doctrine_cache.stats_command</parameter>
+      <parameter>console.command.public_alias.doctrine_migrations.diff_command</parameter>
+      <parameter>console.command.public_alias.doctrine_migrations.execute_command</parameter>
+      <parameter>console.command.public_alias.doctrine_migrations.generate_command</parameter>
+      <parameter>console.command.public_alias.doctrine_migrations.latest_command</parameter>
+      <parameter>console.command.public_alias.doctrine_migrations.migrate_command</parameter>
+      <parameter>console.command.public_alias.doctrine_migrations.status_command</parameter>
+      <parameter>console.command.public_alias.doctrine_migrations.version_command</parameter>
     </parameter>
   </parameters>
   <services>
@@ -168,8 +279,17 @@
       <tag name="kernel.event_listener" event="kernel.request" priority="25"/>
       <tag name="container.hot_path"/>
       <argument type="service" id="twig"/>
+      <argument type="service" id="doctrine.orm.default_entity_manager"/>
     </service>
     <service id="App\Kernel" class="App\Kernel" public="false" autowire="true" autoconfigure="true"/>
+    <service id="App\Repository\CountryRepository" class="App\Repository\CountryRepository" public="false" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id="App\Repository\LanguageRepository" class="App\Repository\LanguageRepository" public="false" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
     <service id="controller_name_converter" class="Symfony\Bundle\FrameworkBundle\Controller\ControllerNameParser" public="false">
       <tag name="monolog.logger" channel="request"/>
       <argument type="service" id="kernel"/>
@@ -238,9 +358,9 @@
     <service id="filesystem" class="Symfony\Component\Filesystem\Filesystem" public="true"/>
     <service id="file_locator" class="Symfony\Component\HttpKernel\Config\FileLocator" public="false">
       <argument type="service" id="kernel"/>
-      <argument>/media/simplon/virtual-hosts/symfony-challenge/src/Resources</argument>
+      <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/src/Resources</argument>
       <argument type="collection">
-        <argument>/media/simplon/virtual-hosts/symfony-challenge/src</argument>
+        <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/src</argument>
       </argument>
     </service>
     <service id="uri_signer" class="Symfony\Component\HttpKernel\UriSigner" public="false">
@@ -376,8 +496,8 @@
       <argument type="service" id="translator.data_collector"/>
       <argument type="service" id="translation.reader"/>
       <argument type="service" id="translation.extractor"/>
-      <argument>/media/simplon/virtual-hosts/symfony-challenge/translations</argument>
-      <argument>/media/simplon/virtual-hosts/symfony-challenge/templates</argument>
+      <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/translations</argument>
+      <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/templates</argument>
       <call method="setName">
         <argument>debug:translation</argument>
       </call>
@@ -388,8 +508,8 @@
       <argument type="service" id="translation.reader"/>
       <argument type="service" id="translation.extractor"/>
       <argument>en</argument>
-      <argument>/media/simplon/virtual-hosts/symfony-challenge/translations</argument>
-      <argument>/media/simplon/virtual-hosts/symfony-challenge/templates</argument>
+      <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/translations</argument>
+      <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/templates</argument>
       <call method="setName">
         <argument>translation:update</argument>
       </call>
@@ -431,8 +551,8 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>+5NX9RAsJNlqieFBTlzSPY</argument>
-      <argument>/media/simplon/virtual-hosts/symfony-challenge/var/cache/dev/pools</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/var/cache/dev/pools</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -441,7 +561,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>+5NX9RAsJNlqieFBTlzSPY</argument>
+      <argument>%container.build_id%</argument>
       <call method="setLogger">
         <argument type="service" id="logger" on-invalid="ignore"/>
       </call>
@@ -461,7 +581,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>/media/simplon/virtual-hosts/symfony-challenge/var/cache/dev/pools</argument>
+      <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/var/cache/dev/pools</argument>
       <call method="setLogger">
         <argument type="service" id="logger" on-invalid="ignore"/>
       </call>
@@ -561,24 +681,24 @@
         </argument>
       </argument>
       <argument type="collection">
-        <argument key="cache_dir">/media/simplon/virtual-hosts/symfony-challenge/var/cache/dev/translations</argument>
+        <argument key="cache_dir">/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/var/cache/dev/translations</argument>
         <argument key="debug">true</argument>
         <argument key="resource_files" type="collection">
           <argument key="de" type="collection">
-            <argument>/media/simplon/virtual-hosts/symfony-challenge/translations/messages.de.xlf</argument>
-            <argument>/media/simplon/virtual-hosts/symfony-challenge/translations/messages.de.xlf</argument>
+            <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/translations/messages.de.xlf</argument>
+            <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/translations/messages.de.xlf</argument>
           </argument>
           <argument key="en" type="collection">
-            <argument>/media/simplon/virtual-hosts/symfony-challenge/translations/messages.en.xlf</argument>
-            <argument>/media/simplon/virtual-hosts/symfony-challenge/translations/messages.en.xlf</argument>
+            <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/translations/messages.en.xlf</argument>
+            <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/translations/messages.en.xlf</argument>
           </argument>
           <argument key="fr" type="collection">
-            <argument>/media/simplon/virtual-hosts/symfony-challenge/translations/messages.fr.xlf</argument>
-            <argument>/media/simplon/virtual-hosts/symfony-challenge/translations/messages.fr.xlf</argument>
+            <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/translations/messages.fr.xlf</argument>
+            <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/translations/messages.fr.xlf</argument>
           </argument>
           <argument key="nl" type="collection">
-            <argument>/media/simplon/virtual-hosts/symfony-challenge/translations/messages.nl.xlf</argument>
-            <argument>/media/simplon/virtual-hosts/symfony-challenge/translations/messages.nl.xlf</argument>
+            <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/translations/messages.nl.xlf</argument>
+            <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/translations/messages.nl.xlf</argument>
           </argument>
         </argument>
       </argument>
@@ -832,11 +952,14 @@
         <argument type="service" id="data_collector.twig"/>
       </call>
       <call method="add">
+        <argument type="service" id="data_collector.doctrine"/>
+      </call>
+      <call method="add">
         <argument type="service" id="data_collector.config"/>
       </call>
     </service>
     <service id="profiler.storage" class="Symfony\Component\HttpKernel\Profiler\FileProfilerStorage" public="false">
-      <argument>file:/media/simplon/virtual-hosts/symfony-challenge/var/cache/dev/profiler</argument>
+      <argument>file:/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/var/cache/dev/profiler</argument>
     </service>
     <service id="profiler_listener" class="Symfony\Component\HttpKernel\EventListener\ProfilerListener" public="false">
       <tag name="kernel.event_subscriber"/>
@@ -873,7 +996,7 @@
       <tag name="data_collector" template="@WebProfiler/Collector/logger.html.twig" id="logger" priority="300"/>
       <tag name="monolog.logger" channel="profiler"/>
       <argument type="service" id="logger" on-invalid="ignore"/>
-      <argument>/media/simplon/virtual-hosts/symfony-challenge/var/cache/dev/srcDevDebugProjectContainer</argument>
+      <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/var/cache/dev/srcDevDebugProjectContainer</argument>
     </service>
     <service id="data_collector.time" class="Symfony\Component\HttpKernel\DataCollector\TimeDataCollector" public="false">
       <tag name="data_collector" template="@WebProfiler/Collector/time.html.twig" id="time" priority="330"/>
@@ -947,7 +1070,7 @@
     <service id="debug.file_link_formatter" class="Symfony\Component\HttpKernel\Debug\FileLinkFormatter" public="false">
       <argument>null</argument>
       <argument type="service" id="request_stack" on-invalid="ignore"/>
-      <argument>/media/simplon/virtual-hosts/symfony-challenge</argument>
+      <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER</argument>
       <argument>/_profiler/open?file=%%f&amp;line=%%l#line%%l</argument>
     </service>
     <service id="debug.stopwatch" class="Symfony\Component\Stopwatch\Stopwatch">
@@ -1200,6 +1323,22 @@
         </argument>
         <argument>-128</argument>
       </call>
+      <call method="addListener">
+        <argument>console.error</argument>
+        <argument type="collection">
+          <argument type="service" id="maker.console_error_listener"/>
+          <argument>onConsoleError</argument>
+        </argument>
+        <argument>0</argument>
+      </call>
+      <call method="addListener">
+        <argument>console.terminate</argument>
+        <argument type="collection">
+          <argument type="service" id="maker.console_error_listener"/>
+          <argument>onConsoleTerminate</argument>
+        </argument>
+        <argument>0</argument>
+      </call>
     </service>
     <service id="debug.controller_resolver" class="Symfony\Component\HttpKernel\Controller\TraceableControllerResolver" public="false">
       <tag name="monolog.logger" channel="request"/>
@@ -1280,7 +1419,7 @@
       <argument type="service" id="service_container"/>
       <argument>kernel:loadRoutes</argument>
       <argument type="collection">
-        <argument key="cache_dir">/media/simplon/virtual-hosts/symfony-challenge/var/cache/dev</argument>
+        <argument key="cache_dir">/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/var/cache/dev</argument>
         <argument key="debug">true</argument>
         <argument key="generator_class">Symfony\Component\Routing\Generator\UrlGenerator</argument>
         <argument key="generator_base_class">Symfony\Component\Routing\Generator\UrlGenerator</argument>
@@ -1321,7 +1460,7 @@
       <argument type="service" id="request_stack"/>
       <argument type="service" id="router.request_context" on-invalid="ignore"/>
       <argument type="service" id="logger" on-invalid="ignore"/>
-      <argument>/media/simplon/virtual-hosts/symfony-challenge</argument>
+      <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER</argument>
       <argument>true</argument>
     </service>
     <service id="Symfony\Bundle\FrameworkBundle\Controller\RedirectController" class="Symfony\Bundle\FrameworkBundle\Controller\RedirectController" public="true">
@@ -1347,12 +1486,12 @@
       <argument type="service" id="file_locator"/>
       <argument type="service" id="routing.loader.annotation"/>
     </service>
-    <service id="2_PhpArrayAdapter~555JrOx" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
-      <argument>/media/simplon/virtual-hosts/symfony-challenge/var/cache/dev/annotations.php</argument>
+    <service id="2_PhpArrayAdapter~uLdk9hb" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
+      <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/var/cache/dev/annotations.php</argument>
       <argument type="service" id="cache.annotations"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
-    <service id="1_ArrayCache~555JrOx" class="Doctrine\Common\Cache\ArrayCache" public="false"/>
+    <service id="1_ArrayCache~uLdk9hb" class="Doctrine\Common\Cache\ArrayCache" public="false"/>
     <service id="annotations.reader" class="Doctrine\Common\Annotations\AnnotationReader" public="false">
       <call method="addGlobalIgnoredName">
         <argument>required</argument>
@@ -1370,12 +1509,12 @@
     <service id="annotations.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\AnnotationsCacheWarmer" public="false">
       <tag name="kernel.cache_warmer"/>
       <argument type="service" id="annotations.reader"/>
-      <argument>/media/simplon/virtual-hosts/symfony-challenge/var/cache/dev/annotations.php</argument>
+      <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/var/cache/dev/annotations.php</argument>
       <argument type="service" id="cache.annotations"/>
       <argument>#^Symfony\\(?:Component\\HttpKernel\\|Bundle\\FrameworkBundle\\Controller\\(?!AbstractController$|Controller$))#</argument>
     </service>
     <service id="annotations.cache" class="Symfony\Component\Cache\DoctrineProvider" public="false">
-      <argument type="service" id="2_PhpArrayAdapter~555JrOx"/>
+      <argument type="service" id="2_PhpArrayAdapter~uLdk9hb"/>
     </service>
     <service id="sensio_framework_extra.controller.listener" class="Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener" public="false">
       <tag name="kernel.event_subscriber"/>
@@ -1416,7 +1555,7 @@
     </service>
     <service id="sensio_framework_extra.converter.doctrine.orm" class="Sensio\Bundle\FrameworkExtraBundle\Request\ParamConverter\DoctrineParamConverter" public="false">
       <tag name="request.param_converter" converter="doctrine.orm"/>
-      <argument>null</argument>
+      <argument type="service" id="doctrine" on-invalid="ignore"/>
       <argument>null</argument>
     </service>
     <service id="framework_extra_bundle.date_time_param_converter" class="Sensio\Bundle\FrameworkExtraBundle\Request\ParamConverter\DateTimeParamConverter" public="false">
@@ -1449,7 +1588,7 @@
       <argument type="service" id="twig.loader.native_filesystem"/>
       <argument type="collection">
         <argument key="paths" type="collection">
-          <argument key="/media/simplon/virtual-hosts/symfony-challenge/templates">null</argument>
+          <argument key="/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/templates">null</argument>
         </argument>
         <argument key="debug">true</argument>
         <argument key="strict_variables">true</argument>
@@ -1458,9 +1597,9 @@
           <argument>form_div_layout.html.twig</argument>
         </argument>
         <argument key="autoescape">name</argument>
-        <argument key="cache">/media/simplon/virtual-hosts/symfony-challenge/var/cache/dev/twig</argument>
+        <argument key="cache">/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/var/cache/dev/twig</argument>
         <argument key="charset">UTF-8</argument>
-        <argument key="default_path">/media/simplon/virtual-hosts/symfony-challenge/templates</argument>
+        <argument key="default_path">/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/templates</argument>
         <argument key="date" type="collection">
           <argument key="format">F j, Y H:i</argument>
           <argument key="interval_format">%d days</argument>
@@ -1502,6 +1641,9 @@
       <call method="addExtension">
         <argument type="service" id="twig.extension.webprofiler"/>
       </call>
+      <call method="addExtension">
+        <argument type="service" id="doctrine.twig.doctrine_extension"/>
+      </call>
       <call method="addGlobal">
         <argument>app</argument>
         <argument type="service" id="twig.app_variable"/>
@@ -1529,14 +1671,14 @@
       <argument type="service" id="service_locator.WXS0TxV.twig.cache_warmer"/>
       <argument>null</argument>
       <argument type="collection">
-        <argument key="/media/simplon/virtual-hosts/symfony-challenge/templates">null</argument>
+        <argument key="/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/templates">null</argument>
       </argument>
     </service>
     <service id="twig.template_iterator" class="Symfony\Bundle\TwigBundle\TemplateIterator" public="false">
       <argument type="service" id="kernel"/>
-      <argument>/media/simplon/virtual-hosts/symfony-challenge/src</argument>
+      <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/src</argument>
       <argument type="collection">
-        <argument key="/media/simplon/virtual-hosts/symfony-challenge/templates">null</argument>
+        <argument key="/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/templates">null</argument>
       </argument>
     </service>
     <service id="twig.template_cache_warmer" class="Symfony\Bundle\TwigBundle\CacheWarmer\TemplateCacheWarmer" public="false">
@@ -1549,36 +1691,52 @@
     <service id="twig.loader.native_filesystem" class="Twig\Loader\FilesystemLoader" public="false">
       <tag name="twig.loader"/>
       <argument type="collection"/>
-      <argument>/media/simplon/virtual-hosts/symfony-challenge</argument>
+      <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER</argument>
       <call method="addPath">
-        <argument>/media/simplon/virtual-hosts/symfony-challenge/templates</argument>
+        <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/templates</argument>
       </call>
       <call method="addPath">
-        <argument>/media/simplon/virtual-hosts/symfony-challenge/vendor/symfony/framework-bundle/Resources/views</argument>
+        <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/vendor/symfony/framework-bundle/Resources/views</argument>
         <argument>Framework</argument>
       </call>
       <call method="addPath">
-        <argument>/media/simplon/virtual-hosts/symfony-challenge/vendor/symfony/framework-bundle/Resources/views</argument>
+        <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/vendor/symfony/framework-bundle/Resources/views</argument>
         <argument>!Framework</argument>
       </call>
       <call method="addPath">
-        <argument>/media/simplon/virtual-hosts/symfony-challenge/vendor/symfony/twig-bundle/Resources/views</argument>
+        <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/vendor/symfony/twig-bundle/Resources/views</argument>
         <argument>Twig</argument>
       </call>
       <call method="addPath">
-        <argument>/media/simplon/virtual-hosts/symfony-challenge/vendor/symfony/twig-bundle/Resources/views</argument>
+        <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/vendor/symfony/twig-bundle/Resources/views</argument>
         <argument>!Twig</argument>
       </call>
       <call method="addPath">
-        <argument>/media/simplon/virtual-hosts/symfony-challenge/vendor/symfony/web-profiler-bundle/Resources/views</argument>
+        <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/vendor/symfony/web-profiler-bundle/Resources/views</argument>
         <argument>WebProfiler</argument>
       </call>
       <call method="addPath">
-        <argument>/media/simplon/virtual-hosts/symfony-challenge/vendor/symfony/web-profiler-bundle/Resources/views</argument>
+        <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/vendor/symfony/web-profiler-bundle/Resources/views</argument>
         <argument>!WebProfiler</argument>
       </call>
       <call method="addPath">
-        <argument>/media/simplon/virtual-hosts/symfony-challenge/templates</argument>
+        <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/vendor/symfony/maker-bundle/src/Resources/views</argument>
+        <argument>Maker</argument>
+      </call>
+      <call method="addPath">
+        <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/vendor/symfony/maker-bundle/src/Resources/views</argument>
+        <argument>!Maker</argument>
+      </call>
+      <call method="addPath">
+        <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/vendor/doctrine/doctrine-bundle/Resources/views</argument>
+        <argument>Doctrine</argument>
+      </call>
+      <call method="addPath">
+        <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/vendor/doctrine/doctrine-bundle/Resources/views</argument>
+        <argument>!Doctrine</argument>
+      </call>
+      <call method="addPath">
+        <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/templates</argument>
       </call>
     </service>
     <service id="twig.loader.chain" class="Twig\Loader\ChainLoader" public="false"/>
@@ -1600,7 +1758,7 @@
     <service id="twig.extension.code" class="Symfony\Bridge\Twig\Extension\CodeExtension" public="false">
       <tag name="twig.extension"/>
       <argument type="service" id="debug.file_link_formatter" on-invalid="ignore"/>
-      <argument>/media/simplon/virtual-hosts/symfony-challenge/src</argument>
+      <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/src</argument>
       <argument>UTF-8</argument>
     </service>
     <service id="twig.extension.routing" class="Symfony\Bridge\Twig\Extension\RoutingExtension" public="false">
@@ -1662,7 +1820,7 @@
     <service id="twig.command.debug" class="Symfony\Bridge\Twig\Command\DebugCommand" public="false">
       <tag name="console.command" command="debug:twig"/>
       <argument type="service" id="twig"/>
-      <argument>/media/simplon/virtual-hosts/symfony-challenge</argument>
+      <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER</argument>
       <call method="setName">
         <argument>debug:twig</argument>
       </call>
@@ -1674,7 +1832,7 @@
         <argument>lint:twig</argument>
       </call>
     </service>
-    <service id="2_HtmlDumper~0lQnRCu" class="Symfony\Component\VarDumper\Dumper\HtmlDumper" public="false">
+    <service id="2_HtmlDumper~RrULNDN" class="Symfony\Component\VarDumper\Dumper\HtmlDumper" public="false">
       <argument>null</argument>
       <argument>UTF-8</argument>
       <argument>1</argument>
@@ -1685,14 +1843,14 @@
         </argument>
       </call>
     </service>
-    <service id="1_NonceGenerator~0lQnRCu" class="Symfony\Bundle\WebProfilerBundle\Csp\NonceGenerator" public="false"/>
+    <service id="1_NonceGenerator~RrULNDN" class="Symfony\Bundle\WebProfilerBundle\Csp\NonceGenerator" public="false"/>
     <service id="web_profiler.controller.profiler" class="Symfony\Bundle\WebProfilerBundle\Controller\ProfilerController" public="true">
       <argument type="service" id="router.default" on-invalid="null"/>
       <argument type="service" id="profiler" on-invalid="null"/>
       <argument type="service" id="twig"/>
       <argument>%data_collector.templates%</argument>
       <argument type="service" id="web_profiler.csp.handler"/>
-      <argument>/media/simplon/virtual-hosts/symfony-challenge</argument>
+      <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER</argument>
     </service>
     <service id="web_profiler.controller.router" class="Symfony\Bundle\WebProfilerBundle\Controller\RouterController" public="true">
       <argument type="service" id="profiler" on-invalid="null"/>
@@ -1705,11 +1863,11 @@
       <argument>true</argument>
     </service>
     <service id="web_profiler.csp.handler" class="Symfony\Bundle\WebProfilerBundle\Csp\ContentSecurityPolicyHandler" public="false">
-      <argument type="service" id="1_NonceGenerator~0lQnRCu"/>
+      <argument type="service" id="1_NonceGenerator~RrULNDN"/>
     </service>
     <service id="twig.extension.webprofiler" class="Symfony\Bundle\WebProfilerBundle\Twig\WebProfilerExtension" public="false">
       <tag name="twig.extension"/>
-      <argument type="service" id="2_HtmlDumper~0lQnRCu"/>
+      <argument type="service" id="2_HtmlDumper~RrULNDN"/>
     </service>
     <service id="web_profiler.debug_toolbar" class="Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener" public="false">
       <tag name="kernel.event_subscriber"/>
@@ -1721,14 +1879,544 @@
       <argument>^/(app(_[\w]+)?\.php/)?_wdt</argument>
       <argument type="service" id="web_profiler.csp.handler"/>
     </service>
+    <service id="maker.file_manager" class="Symfony\Bundle\MakerBundle\FileManager" public="false">
+      <argument type="service" id="filesystem"/>
+      <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER</argument>
+    </service>
+    <service id="maker.generator" class="Symfony\Bundle\MakerBundle\Generator" public="false">
+      <argument type="service" id="maker.file_manager"/>
+    </service>
+    <service id="maker.event_registry" class="Symfony\Bundle\MakerBundle\EventRegistry" public="false">
+      <argument type="service" id="debug.event_dispatcher"/>
+    </service>
+    <service id="maker.console_error_listener" class="Symfony\Bundle\MakerBundle\Event\ConsoleErrorSubscriber" public="false">
+      <tag name="kernel.event_subscriber"/>
+    </service>
+    <service id="maker.maker.make_authenticator" class="Symfony\Bundle\MakerBundle\Maker\MakeAuthenticator" public="false">
+      <tag name="maker.command"/>
+    </service>
+    <service id="maker.maker.make_command" class="Symfony\Bundle\MakerBundle\Maker\MakeCommand" public="false">
+      <tag name="maker.command"/>
+    </service>
+    <service id="maker.maker.make_controller" class="Symfony\Bundle\MakerBundle\Maker\MakeController" public="false">
+      <tag name="maker.command"/>
+      <argument type="service" id="router.default"/>
+    </service>
+    <service id="maker.maker.make_entity" class="Symfony\Bundle\MakerBundle\Maker\MakeEntity" public="false">
+      <tag name="maker.command"/>
+    </service>
+    <service id="maker.maker.make_form" class="Symfony\Bundle\MakerBundle\Maker\MakeForm" public="false">
+      <tag name="maker.command"/>
+    </service>
+    <service id="maker.maker.make_functional_test" class="Symfony\Bundle\MakerBundle\Maker\MakeFunctionalTest" public="false">
+      <tag name="maker.command"/>
+    </service>
+    <service id="maker.maker.make_serializer_encoder" class="Symfony\Bundle\MakerBundle\Maker\MakeSerializerEncoder" public="false">
+      <tag name="maker.command"/>
+    </service>
+    <service id="maker.maker.make_subscriber" class="Symfony\Bundle\MakerBundle\Maker\MakeSubscriber" public="false">
+      <tag name="maker.command"/>
+      <argument type="service" id="maker.event_registry"/>
+    </service>
+    <service id="maker.maker.make_twig_extension" class="Symfony\Bundle\MakerBundle\Maker\MakeTwigExtension" public="false">
+      <tag name="maker.command"/>
+    </service>
+    <service id="maker.maker.make_unit_test" class="Symfony\Bundle\MakerBundle\Maker\MakeUnitTest" public="false">
+      <tag name="maker.command"/>
+    </service>
+    <service id="maker.maker.make_validator" class="Symfony\Bundle\MakerBundle\Maker\MakeValidator" public="false">
+      <tag name="maker.command"/>
+    </service>
+    <service id="maker.maker.make_voter" class="Symfony\Bundle\MakerBundle\Maker\MakeVoter" public="false">
+      <tag name="maker.command"/>
+    </service>
+    <service id="doctrine_cache.abstract.apc" class="Doctrine\Common\Cache\ApcCache" abstract="true"/>
+    <service id="doctrine_cache.abstract.apcu" class="Doctrine\Common\Cache\ApcuCache" abstract="true"/>
+    <service id="doctrine_cache.abstract.array" class="Doctrine\Common\Cache\ArrayCache" abstract="true"/>
+    <service id="doctrine_cache.abstract.chain" class="Doctrine\Common\Cache\ChainCache" abstract="true"/>
+    <service id="doctrine_cache.abstract.couchbase" class="Doctrine\Common\Cache\CouchbaseCache" abstract="true"/>
+    <service id="doctrine_cache.abstract.file_system" class="Doctrine\Common\Cache\FilesystemCache" abstract="true"/>
+    <service id="doctrine_cache.abstract.php_file" class="Doctrine\Common\Cache\PhpFileCache" abstract="true"/>
+    <service id="doctrine_cache.abstract.memcache" class="Doctrine\Common\Cache\MemcacheCache" abstract="true"/>
+    <service id="doctrine_cache.abstract.memcached" class="Doctrine\Common\Cache\MemcachedCache" abstract="true"/>
+    <service id="doctrine_cache.abstract.mongodb" class="Doctrine\Common\Cache\MongoDBCache" abstract="true"/>
+    <service id="doctrine_cache.abstract.redis" class="Doctrine\Common\Cache\RedisCache" abstract="true"/>
+    <service id="doctrine_cache.abstract.predis" class="Doctrine\Common\Cache\PredisCache" abstract="true"/>
+    <service id="doctrine_cache.abstract.riak" class="Doctrine\Common\Cache\RiakCache" abstract="true"/>
+    <service id="doctrine_cache.abstract.sqlite3" class="Doctrine\Common\Cache\SQLite3Cache" abstract="true"/>
+    <service id="doctrine_cache.abstract.void" class="Doctrine\Common\Cache\VoidCache" abstract="true"/>
+    <service id="doctrine_cache.abstract.wincache" class="Doctrine\Common\Cache\WinCacheCache" abstract="true"/>
+    <service id="doctrine_cache.abstract.xcache" class="Doctrine\Common\Cache\XcacheCache" abstract="true"/>
+    <service id="doctrine_cache.abstract.zenddata" class="Doctrine\Common\Cache\ZendDataCache" abstract="true"/>
+    <service id="doctrine_cache.contains_command" class="Doctrine\Bundle\DoctrineCacheBundle\Command\ContainsCommand">
+      <tag name="console.command"/>
+    </service>
+    <service id="doctrine_cache.delete_command" class="Doctrine\Bundle\DoctrineCacheBundle\Command\DeleteCommand">
+      <tag name="console.command"/>
+    </service>
+    <service id="doctrine_cache.flush_command" class="Doctrine\Bundle\DoctrineCacheBundle\Command\FlushCommand">
+      <tag name="console.command"/>
+    </service>
+    <service id="doctrine_cache.stats_command" class="Doctrine\Bundle\DoctrineCacheBundle\Command\StatsCommand">
+      <tag name="console.command"/>
+    </service>
+    <service id="doctrine.dbal.logger.chain" class="Doctrine\DBAL\Logging\LoggerChain" public="false" abstract="true">
+      <call method="addLogger">
+        <argument type="service" id="doctrine.dbal.logger"/>
+      </call>
+    </service>
+    <service id="doctrine.dbal.logger.profiling" class="Doctrine\DBAL\Logging\DebugStack" public="false" abstract="true"/>
+    <service id="doctrine.dbal.logger" class="Symfony\Bridge\Doctrine\Logger\DbalLogger" public="false">
+      <tag name="monolog.logger" channel="doctrine"/>
+      <argument type="service" id="logger" on-invalid="null"/>
+      <argument type="service" id="debug.stopwatch" on-invalid="null"/>
+    </service>
+    <service id="data_collector.doctrine" class="Doctrine\Bundle\DoctrineBundle\DataCollector\DoctrineDataCollector" public="false">
+      <tag name="data_collector" template="@Doctrine/Collector/db.html.twig" id="db" priority="250"/>
+      <argument type="service" id="doctrine"/>
+      <call method="addLogger">
+        <argument>default</argument>
+        <argument type="service" id="doctrine.dbal.logger.profiling.default"/>
+      </call>
+    </service>
+    <service id="doctrine.dbal.connection_factory" class="Doctrine\Bundle\DoctrineBundle\ConnectionFactory">
+      <argument type="collection"/>
+    </service>
+    <service id="doctrine.dbal.connection" class="Doctrine\DBAL\Connection" abstract="true">
+      <factory service="doctrine.dbal.connection_factory" method="createConnection"/>
+    </service>
+    <service id="doctrine.dbal.connection.event_manager" class="Symfony\Bridge\Doctrine\ContainerAwareEventManager" public="false" abstract="true">
+      <argument type="service" id="service_container"/>
+    </service>
+    <service id="doctrine.dbal.connection.configuration" class="Doctrine\DBAL\Configuration" public="false" abstract="true"/>
+    <service id="doctrine" class="Doctrine\Bundle\DoctrineBundle\Registry" public="true">
+      <argument type="service" id="service_container"/>
+      <argument>%doctrine.connections%</argument>
+      <argument>%doctrine.entity_managers%</argument>
+      <argument>default</argument>
+      <argument>default</argument>
+    </service>
+    <service id="doctrine.twig.doctrine_extension" class="Doctrine\Bundle\DoctrineBundle\Twig\DoctrineExtension" public="false">
+      <tag name="twig.extension"/>
+    </service>
+    <service id="doctrine.database_create_command" class="Doctrine\Bundle\DoctrineBundle\Command\CreateDatabaseDoctrineCommand">
+      <tag name="console.command" command="doctrine:database:create"/>
+      <call method="setName">
+        <argument>doctrine:database:create</argument>
+      </call>
+    </service>
+    <service id="doctrine.database_drop_command" class="Doctrine\Bundle\DoctrineBundle\Command\DropDatabaseDoctrineCommand">
+      <tag name="console.command" command="doctrine:database:drop"/>
+      <call method="setName">
+        <argument>doctrine:database:drop</argument>
+      </call>
+    </service>
+    <service id="doctrine.generate_entities_command" class="Doctrine\Bundle\DoctrineBundle\Command\GenerateEntitiesDoctrineCommand">
+      <tag name="console.command" command="doctrine:generate:entities"/>
+      <call method="setName">
+        <argument>doctrine:generate:entities</argument>
+      </call>
+    </service>
+    <service id="doctrine.mapping_import_command" class="Doctrine\Bundle\DoctrineBundle\Command\ImportMappingDoctrineCommand">
+      <tag name="console.command" command="doctrine:mapping:import"/>
+      <call method="setName">
+        <argument>doctrine:mapping:import</argument>
+      </call>
+    </service>
+    <service id="doctrine.dbal.default_connection.configuration" class="Doctrine\DBAL\Configuration" public="false">
+      <call method="setSQLLogger">
+        <argument type="service" id="doctrine.dbal.logger.chain.default"/>
+      </call>
+    </service>
+    <service id="doctrine.dbal.logger.profiling.default" class="Doctrine\DBAL\Logging\DebugStack" public="false"/>
+    <service id="doctrine.dbal.logger.chain.default" class="Doctrine\DBAL\Logging\LoggerChain" public="false">
+      <call method="addLogger">
+        <argument type="service" id="doctrine.dbal.logger"/>
+      </call>
+      <call method="addLogger">
+        <argument type="service" id="doctrine.dbal.logger.profiling.default"/>
+      </call>
+    </service>
+    <service id="doctrine.dbal.default_connection.event_manager" class="Symfony\Bridge\Doctrine\ContainerAwareEventManager" public="false">
+      <argument type="service" id="service_container"/>
+      <call method="addEventListener">
+        <argument type="collection">
+          <argument>loadClassMetadata</argument>
+        </argument>
+        <argument type="service" id="doctrine.orm.default_listeners.attach_entity_listeners"/>
+      </call>
+    </service>
+    <service id="doctrine.dbal.default_connection" class="Doctrine\DBAL\Connection" public="true">
+      <argument type="collection">
+        <argument key="driver">pdo_mysql</argument>
+        <argument key="charset">utf8mb4</argument>
+        <argument key="url">%env(resolve:DATABASE_URL)%</argument>
+        <argument key="host">localhost</argument>
+        <argument key="port">null</argument>
+        <argument key="user">root</argument>
+        <argument key="password">null</argument>
+        <argument key="driverOptions" type="collection"/>
+        <argument key="serverVersion">5.7</argument>
+        <argument key="defaultTableOptions" type="collection"/>
+      </argument>
+      <argument type="service" id="doctrine.dbal.default_connection.configuration"/>
+      <argument type="service" id="doctrine.dbal.default_connection.event_manager"/>
+      <argument type="collection"/>
+      <factory service="doctrine.dbal.connection_factory" method="createConnection"/>
+    </service>
+    <service id="doctrine.orm.proxy_cache_warmer" class="Symfony\Bridge\Doctrine\CacheWarmer\ProxyCacheWarmer" public="false">
+      <tag name="kernel.cache_warmer"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id="form.type_guesser.doctrine" class="Symfony\Bridge\Doctrine\Form\DoctrineOrmTypeGuesser">
+      <tag name="form.type_guesser"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id="form.type.entity" class="Symfony\Bridge\Doctrine\Form\Type\EntityType">
+      <tag name="form.type" alias="entity"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id="doctrine.orm.configuration" class="Doctrine\ORM\Configuration" public="false" abstract="true"/>
+    <service id="doctrine.orm.entity_manager.abstract" class="Doctrine\ORM\EntityManager" lazy="true" abstract="true">
+      <factory class="Doctrine\ORM\EntityManager" method="create"/>
+    </service>
+    <service id="doctrine.orm.container_repository_factory" class="Doctrine\Bundle\DoctrineBundle\Repository\ContainerRepositoryFactory" public="false">
+      <argument type="service" id="service_locator.tSyYN0Z"/>
+    </service>
+    <service id="doctrine.orm.manager_configurator.abstract" class="Doctrine\Bundle\DoctrineBundle\ManagerConfigurator" abstract="true">
+      <argument type="collection"/>
+      <argument type="collection"/>
+    </service>
+    <service id="doctrine.orm.validator.unique" class="Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntityValidator">
+      <tag name="validator.constraint_validator" alias="doctrine.orm.validator.unique"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id="doctrine.orm.validator_initializer" class="Symfony\Bridge\Doctrine\Validator\DoctrineInitializer">
+      <tag name="validator.initializer"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id="doctrine.orm.security.user.provider" class="Symfony\Bridge\Doctrine\Security\User\EntityUserProvider" public="false" abstract="true">
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id="doctrine.orm.listeners.resolve_target_entity" class="Doctrine\ORM\Tools\ResolveTargetEntityListener" public="false"/>
+    <service id="doctrine.orm.naming_strategy.default" class="Doctrine\ORM\Mapping\DefaultNamingStrategy" public="false"/>
+    <service id="doctrine.orm.naming_strategy.underscore" class="Doctrine\ORM\Mapping\UnderscoreNamingStrategy" public="false"/>
+    <service id="doctrine.orm.quote_strategy.default" class="Doctrine\ORM\Mapping\DefaultQuoteStrategy" public="false"/>
+    <service id="doctrine.orm.quote_strategy.ansi" class="Doctrine\ORM\Mapping\AnsiQuoteStrategy" public="false"/>
+    <service id="doctrine.cache_clear_metadata_command" class="Doctrine\Bundle\DoctrineBundle\Command\Proxy\ClearMetadataCacheDoctrineCommand">
+      <tag name="console.command" command="doctrine:cache:clear-metadata"/>
+      <call method="setName">
+        <argument>doctrine:cache:clear-metadata</argument>
+      </call>
+    </service>
+    <service id="doctrine.cache_clear_query_cache_command" class="Doctrine\Bundle\DoctrineBundle\Command\Proxy\ClearQueryCacheDoctrineCommand">
+      <tag name="console.command" command="doctrine:cache:clear-query"/>
+      <call method="setName">
+        <argument>doctrine:cache:clear-query</argument>
+      </call>
+    </service>
+    <service id="doctrine.cache_clear_result_command" class="Doctrine\Bundle\DoctrineBundle\Command\Proxy\ClearResultCacheDoctrineCommand">
+      <tag name="console.command" command="doctrine:cache:clear-result"/>
+      <call method="setName">
+        <argument>doctrine:cache:clear-result</argument>
+      </call>
+    </service>
+    <service id="doctrine.cache_collection_region_command" class="Doctrine\Bundle\DoctrineBundle\Command\Proxy\CollectionRegionDoctrineCommand">
+      <tag name="console.command" command="doctrine:cache:clear-collection-region"/>
+      <call method="setName">
+        <argument>doctrine:cache:clear-collection-region</argument>
+      </call>
+    </service>
+    <service id="doctrine.mapping_convert_command" class="Doctrine\Bundle\DoctrineBundle\Command\Proxy\ConvertMappingDoctrineCommand">
+      <tag name="console.command" command="doctrine:mapping:convert"/>
+      <call method="setName">
+        <argument>doctrine:mapping:convert</argument>
+      </call>
+    </service>
+    <service id="doctrine.schema_create_command" class="Doctrine\Bundle\DoctrineBundle\Command\Proxy\CreateSchemaDoctrineCommand">
+      <tag name="console.command" command="doctrine:schema:create"/>
+      <call method="setName">
+        <argument>doctrine:schema:create</argument>
+      </call>
+    </service>
+    <service id="doctrine.schema_drop_command" class="Doctrine\Bundle\DoctrineBundle\Command\Proxy\DropSchemaDoctrineCommand">
+      <tag name="console.command" command="doctrine:schema:drop"/>
+      <call method="setName">
+        <argument>doctrine:schema:drop</argument>
+      </call>
+    </service>
+    <service id="doctrine.ensure_production_settings_command" class="Doctrine\Bundle\DoctrineBundle\Command\Proxy\EnsureProductionSettingsDoctrineCommand">
+      <tag name="console.command" command="doctrine:ensure-production-settings"/>
+      <call method="setName">
+        <argument>doctrine:ensure-production-settings</argument>
+      </call>
+    </service>
+    <service id="doctrine.clear_entity_region_command" class="Doctrine\Bundle\DoctrineBundle\Command\Proxy\EntityRegionCacheDoctrineCommand">
+      <tag name="console.command" command="doctrine:cache:clear-entity-region"/>
+      <call method="setName">
+        <argument>doctrine:cache:clear-entity-region</argument>
+      </call>
+    </service>
+    <service id="doctrine.database_import_command" class="Doctrine\Bundle\DoctrineBundle\Command\Proxy\ImportDoctrineCommand">
+      <tag name="console.command" command="doctrine:database:import"/>
+      <call method="setName">
+        <argument>doctrine:database:import</argument>
+      </call>
+    </service>
+    <service id="doctrine.mapping_info_command" class="Doctrine\Bundle\DoctrineBundle\Command\Proxy\InfoDoctrineCommand">
+      <tag name="console.command" command="doctrine:mapping:info"/>
+      <call method="setName">
+        <argument>doctrine:mapping:info</argument>
+      </call>
+    </service>
+    <service id="doctrine.clear_query_region_command" class="Doctrine\Bundle\DoctrineBundle\Command\Proxy\QueryRegionCacheDoctrineCommand">
+      <tag name="console.command" command="doctrine:cache:clear-query-region"/>
+      <call method="setName">
+        <argument>doctrine:cache:clear-query-region</argument>
+      </call>
+    </service>
+    <service id="doctrine.query_dql_command" class="Doctrine\Bundle\DoctrineBundle\Command\Proxy\RunDqlDoctrineCommand">
+      <tag name="console.command" command="doctrine:query:dql"/>
+      <call method="setName">
+        <argument>doctrine:query:dql</argument>
+      </call>
+    </service>
+    <service id="doctrine.query_sql_command" class="Doctrine\Bundle\DoctrineBundle\Command\Proxy\RunSqlDoctrineCommand">
+      <tag name="console.command" command="doctrine:query:sql"/>
+      <call method="setName">
+        <argument>doctrine:query:sql</argument>
+      </call>
+    </service>
+    <service id="doctrine.schema_update_command" class="Doctrine\Bundle\DoctrineBundle\Command\Proxy\UpdateSchemaDoctrineCommand">
+      <tag name="console.command" command="doctrine:schema:update"/>
+      <call method="setName">
+        <argument>doctrine:schema:update</argument>
+      </call>
+    </service>
+    <service id="doctrine.schema_validate_command" class="Doctrine\Bundle\DoctrineBundle\Command\Proxy\ValidateSchemaCommand">
+      <tag name="console.command" command="doctrine:schema:validate"/>
+      <call method="setName">
+        <argument>doctrine:schema:validate</argument>
+      </call>
+    </service>
+    <service id="doctrine.orm.default_configuration" class="Doctrine\ORM\Configuration" public="false">
+      <call method="setEntityNamespaces">
+        <argument type="collection">
+          <argument key="App">App\Entity</argument>
+        </argument>
+      </call>
+      <call method="setMetadataCacheImpl">
+        <argument type="service" id="doctrine_cache.providers.doctrine.orm.default_metadata_cache"/>
+      </call>
+      <call method="setQueryCacheImpl">
+        <argument type="service" id="doctrine_cache.providers.doctrine.orm.default_query_cache"/>
+      </call>
+      <call method="setResultCacheImpl">
+        <argument type="service" id="doctrine_cache.providers.doctrine.orm.default_result_cache"/>
+      </call>
+      <call method="setMetadataDriverImpl">
+        <argument type="service" id="doctrine.orm.default_metadata_driver"/>
+      </call>
+      <call method="setProxyDir">
+        <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/var/cache/dev/doctrine/orm/Proxies</argument>
+      </call>
+      <call method="setProxyNamespace">
+        <argument>Proxies</argument>
+      </call>
+      <call method="setAutoGenerateProxyClasses">
+        <argument>true</argument>
+      </call>
+      <call method="setClassMetadataFactoryName">
+        <argument>Doctrine\ORM\Mapping\ClassMetadataFactory</argument>
+      </call>
+      <call method="setDefaultRepositoryClassName">
+        <argument>Doctrine\ORM\EntityRepository</argument>
+      </call>
+      <call method="setNamingStrategy">
+        <argument type="service" id="doctrine.orm.naming_strategy.underscore"/>
+      </call>
+      <call method="setQuoteStrategy">
+        <argument type="service" id="doctrine.orm.quote_strategy.default"/>
+      </call>
+      <call method="setEntityListenerResolver">
+        <argument type="service" id="doctrine.orm.default_entity_listener_resolver"/>
+      </call>
+      <call method="setRepositoryFactory">
+        <argument type="service" id="doctrine.orm.container_repository_factory"/>
+      </call>
+    </service>
+    <service id="doctrine.orm.default_annotation_metadata_driver" class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
+      <argument type="service" id="annotations.cached_reader"/>
+      <argument type="collection">
+        <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/src/Entity</argument>
+      </argument>
+    </service>
+    <service id="doctrine.orm.default_metadata_driver" class="Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain" public="false">
+      <call method="addDriver">
+        <argument type="service" id="doctrine.orm.default_annotation_metadata_driver"/>
+        <argument>App\Entity</argument>
+      </call>
+    </service>
+    <service id="doctrine_cache.providers.doctrine.orm.default_metadata_cache" class="Doctrine\Common\Cache\ArrayCache">
+      <call method="setNamespace">
+        <argument>sf_orm_default_ae205d1d6562579eb56740b727a6bd06ecb73df84011c15db04aca0ef7cd0a2c</argument>
+      </call>
+    </service>
+    <service id="doctrine_cache.providers.doctrine.orm.default_result_cache" class="Doctrine\Common\Cache\ArrayCache">
+      <call method="setNamespace">
+        <argument>sf_orm_default_ae205d1d6562579eb56740b727a6bd06ecb73df84011c15db04aca0ef7cd0a2c</argument>
+      </call>
+    </service>
+    <service id="doctrine_cache.providers.doctrine.orm.default_query_cache" class="Doctrine\Common\Cache\ArrayCache">
+      <call method="setNamespace">
+        <argument>sf_orm_default_ae205d1d6562579eb56740b727a6bd06ecb73df84011c15db04aca0ef7cd0a2c</argument>
+      </call>
+    </service>
+    <service id="doctrine.orm.default_entity_listener_resolver" class="Doctrine\Bundle\DoctrineBundle\Mapping\ContainerAwareEntityListenerResolver">
+      <argument type="service" id="service_container"/>
+    </service>
+    <service id="doctrine.orm.default_listeners.attach_entity_listeners" class="Doctrine\ORM\Tools\AttachEntityListenersListener">
+      <tag name="doctrine.event_listener" event="loadClassMetadata"/>
+    </service>
+    <service id="doctrine.orm.default_manager_configurator" class="Doctrine\Bundle\DoctrineBundle\ManagerConfigurator">
+      <argument type="collection"/>
+      <argument type="collection"/>
+    </service>
+    <service id="doctrine.orm.default_entity_manager" class="Doctrine\ORM\EntityManager" public="true" lazy="true">
+      <argument type="service" id="doctrine.dbal.default_connection"/>
+      <argument type="service" id="doctrine.orm.default_configuration"/>
+      <factory class="Doctrine\ORM\EntityManager" method="create"/>
+      <configurator service="doctrine.orm.default_manager_configurator" method="configure"/>
+    </service>
+    <service id="doctrine_migrations.diff_command" class="Doctrine\Bundle\MigrationsBundle\Command\MigrationsDiffDoctrineCommand">
+      <tag name="console.command"/>
+    </service>
+    <service id="doctrine_migrations.execute_command" class="Doctrine\Bundle\MigrationsBundle\Command\MigrationsExecuteDoctrineCommand">
+      <tag name="console.command"/>
+    </service>
+    <service id="doctrine_migrations.generate_command" class="Doctrine\Bundle\MigrationsBundle\Command\MigrationsGenerateDoctrineCommand">
+      <tag name="console.command"/>
+    </service>
+    <service id="doctrine_migrations.latest_command" class="Doctrine\Bundle\MigrationsBundle\Command\MigrationsLatestDoctrineCommand">
+      <tag name="console.command"/>
+    </service>
+    <service id="doctrine_migrations.migrate_command" class="Doctrine\Bundle\MigrationsBundle\Command\MigrationsMigrateDoctrineCommand">
+      <tag name="console.command"/>
+    </service>
+    <service id="doctrine_migrations.status_command" class="Doctrine\Bundle\MigrationsBundle\Command\MigrationsStatusDoctrineCommand">
+      <tag name="console.command"/>
+    </service>
+    <service id="doctrine_migrations.version_command" class="Doctrine\Bundle\MigrationsBundle\Command\MigrationsVersionDoctrineCommand">
+      <tag name="console.command"/>
+    </service>
     <service id="instanceof.Symfony\Bundle\FrameworkBundle\Controller\Controller.0.App\Controller\SubdomainController" class="App\Controller\SubdomainController" public="false" autowire="true" abstract="true"/>
     <service id="abstract.instanceof.App\Controller\SubdomainController" class="App\Controller\SubdomainController" public="false" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id="instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\CountryRepository" class="App\Repository\CountryRepository" public="false" autowire="true" abstract="true"/>
+    <service id="abstract.instanceof.App\Repository\CountryRepository" class="App\Repository\CountryRepository" public="false" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id="instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\LanguageRepository" class="App\Repository\LanguageRepository" public="false" autowire="true" abstract="true"/>
+    <service id="abstract.instanceof.App\Repository\LanguageRepository" class="App\Repository\LanguageRepository" public="false" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id="maker.auto_command.make_auth" class="Symfony\Bundle\MakerBundle\Command\MakerCommand">
+      <tag name="console.command" command="make:auth"/>
+      <argument type="service" id="maker.maker.make_authenticator"/>
+      <argument type="service" id="maker.generator"/>
+      <call method="setName">
+        <argument>make:auth</argument>
+      </call>
+    </service>
+    <service id="maker.auto_command.make_command" class="Symfony\Bundle\MakerBundle\Command\MakerCommand">
+      <tag name="console.command" command="make:command"/>
+      <argument type="service" id="maker.maker.make_command"/>
+      <argument type="service" id="maker.generator"/>
+      <call method="setName">
+        <argument>make:command</argument>
+      </call>
+    </service>
+    <service id="maker.auto_command.make_controller" class="Symfony\Bundle\MakerBundle\Command\MakerCommand">
+      <tag name="console.command" command="make:controller"/>
+      <argument type="service" id="maker.maker.make_controller"/>
+      <argument type="service" id="maker.generator"/>
+      <call method="setName">
+        <argument>make:controller</argument>
+      </call>
+    </service>
+    <service id="maker.auto_command.make_entity" class="Symfony\Bundle\MakerBundle\Command\MakerCommand">
+      <tag name="console.command" command="make:entity"/>
+      <argument type="service" id="maker.maker.make_entity"/>
+      <argument type="service" id="maker.generator"/>
+      <call method="setName">
+        <argument>make:entity</argument>
+      </call>
+    </service>
+    <service id="maker.auto_command.make_form" class="Symfony\Bundle\MakerBundle\Command\MakerCommand">
+      <tag name="console.command" command="make:form"/>
+      <argument type="service" id="maker.maker.make_form"/>
+      <argument type="service" id="maker.generator"/>
+      <call method="setName">
+        <argument>make:form</argument>
+      </call>
+    </service>
+    <service id="maker.auto_command.make_functional_test" class="Symfony\Bundle\MakerBundle\Command\MakerCommand">
+      <tag name="console.command" command="make:functional-test"/>
+      <argument type="service" id="maker.maker.make_functional_test"/>
+      <argument type="service" id="maker.generator"/>
+      <call method="setName">
+        <argument>make:functional-test</argument>
+      </call>
+    </service>
+    <service id="maker.auto_command.make_serializer_encoder" class="Symfony\Bundle\MakerBundle\Command\MakerCommand">
+      <tag name="console.command" command="make:serializer:encoder"/>
+      <argument type="service" id="maker.maker.make_serializer_encoder"/>
+      <argument type="service" id="maker.generator"/>
+      <call method="setName">
+        <argument>make:serializer:encoder</argument>
+      </call>
+    </service>
+    <service id="maker.auto_command.make_subscriber" class="Symfony\Bundle\MakerBundle\Command\MakerCommand">
+      <tag name="console.command" command="make:subscriber"/>
+      <argument type="service" id="maker.maker.make_subscriber"/>
+      <argument type="service" id="maker.generator"/>
+      <call method="setName">
+        <argument>make:subscriber</argument>
+      </call>
+    </service>
+    <service id="maker.auto_command.make_twig_extension" class="Symfony\Bundle\MakerBundle\Command\MakerCommand">
+      <tag name="console.command" command="make:twig-extension"/>
+      <argument type="service" id="maker.maker.make_twig_extension"/>
+      <argument type="service" id="maker.generator"/>
+      <call method="setName">
+        <argument>make:twig-extension</argument>
+      </call>
+    </service>
+    <service id="maker.auto_command.make_unit_test" class="Symfony\Bundle\MakerBundle\Command\MakerCommand">
+      <tag name="console.command" command="make:unit-test"/>
+      <argument type="service" id="maker.maker.make_unit_test"/>
+      <argument type="service" id="maker.generator"/>
+      <call method="setName">
+        <argument>make:unit-test</argument>
+      </call>
+    </service>
+    <service id="maker.auto_command.make_validator" class="Symfony\Bundle\MakerBundle\Command\MakerCommand">
+      <tag name="console.command" command="make:validator"/>
+      <argument type="service" id="maker.maker.make_validator"/>
+      <argument type="service" id="maker.generator"/>
+      <call method="setName">
+        <argument>make:validator</argument>
+      </call>
+    </service>
+    <service id="maker.auto_command.make_voter" class="Symfony\Bundle\MakerBundle\Command\MakerCommand">
+      <tag name="console.command" command="make:voter"/>
+      <argument type="service" id="maker.maker.make_voter"/>
+      <argument type="service" id="maker.generator"/>
+      <call method="setName">
+        <argument>make:voter</argument>
+      </call>
+    </service>
     <service id="service_locator.v5YYcZp" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection"/>
     </service>
     <service id="console.command_loader" class="Symfony\Component\Console\CommandLoader\ContainerCommandLoader" public="true">
-      <argument type="service" id="service_locator.Ujry_eP"/>
+      <argument type="service" id="service_locator.Tar0QjR"/>
       <argument type="collection">
         <argument key="about">console.command.about</argument>
         <argument key="assets:install">console.command.assets_install</argument>
@@ -1749,9 +2437,41 @@
         <argument key="lint:yaml">console.command.yaml_lint</argument>
         <argument key="debug:twig">twig.command.debug</argument>
         <argument key="lint:twig">twig.command.lint</argument>
+        <argument key="doctrine:database:create">doctrine.database_create_command</argument>
+        <argument key="doctrine:database:drop">doctrine.database_drop_command</argument>
+        <argument key="doctrine:generate:entities">doctrine.generate_entities_command</argument>
+        <argument key="doctrine:mapping:import">doctrine.mapping_import_command</argument>
+        <argument key="doctrine:cache:clear-metadata">doctrine.cache_clear_metadata_command</argument>
+        <argument key="doctrine:cache:clear-query">doctrine.cache_clear_query_cache_command</argument>
+        <argument key="doctrine:cache:clear-result">doctrine.cache_clear_result_command</argument>
+        <argument key="doctrine:cache:clear-collection-region">doctrine.cache_collection_region_command</argument>
+        <argument key="doctrine:mapping:convert">doctrine.mapping_convert_command</argument>
+        <argument key="doctrine:schema:create">doctrine.schema_create_command</argument>
+        <argument key="doctrine:schema:drop">doctrine.schema_drop_command</argument>
+        <argument key="doctrine:ensure-production-settings">doctrine.ensure_production_settings_command</argument>
+        <argument key="doctrine:cache:clear-entity-region">doctrine.clear_entity_region_command</argument>
+        <argument key="doctrine:database:import">doctrine.database_import_command</argument>
+        <argument key="doctrine:mapping:info">doctrine.mapping_info_command</argument>
+        <argument key="doctrine:cache:clear-query-region">doctrine.clear_query_region_command</argument>
+        <argument key="doctrine:query:dql">doctrine.query_dql_command</argument>
+        <argument key="doctrine:query:sql">doctrine.query_sql_command</argument>
+        <argument key="doctrine:schema:update">doctrine.schema_update_command</argument>
+        <argument key="doctrine:schema:validate">doctrine.schema_validate_command</argument>
+        <argument key="make:auth">maker.auto_command.make_auth</argument>
+        <argument key="make:command">maker.auto_command.make_command</argument>
+        <argument key="make:controller">maker.auto_command.make_controller</argument>
+        <argument key="make:entity">maker.auto_command.make_entity</argument>
+        <argument key="make:form">maker.auto_command.make_form</argument>
+        <argument key="make:functional-test">maker.auto_command.make_functional_test</argument>
+        <argument key="make:serializer:encoder">maker.auto_command.make_serializer_encoder</argument>
+        <argument key="make:subscriber">maker.auto_command.make_subscriber</argument>
+        <argument key="make:twig-extension">maker.auto_command.make_twig_extension</argument>
+        <argument key="make:unit-test">maker.auto_command.make_unit_test</argument>
+        <argument key="make:validator">maker.auto_command.make_validator</argument>
+        <argument key="make:voter">maker.auto_command.make_voter</argument>
       </argument>
     </service>
-    <service id="service_locator.Ujry_eP" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id="service_locator.Tar0QjR" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="console.command.about" type="service" id="console.command.about"/>
@@ -1771,6 +2491,38 @@
         <argument key="console.command.translation_update" type="service" id="console.command.translation_update"/>
         <argument key="console.command.xliff_lint" type="service" id="console.command.xliff_lint"/>
         <argument key="console.command.yaml_lint" type="service" id="console.command.yaml_lint"/>
+        <argument key="doctrine.cache_clear_metadata_command" type="service" id="doctrine.cache_clear_metadata_command"/>
+        <argument key="doctrine.cache_clear_query_cache_command" type="service" id="doctrine.cache_clear_query_cache_command"/>
+        <argument key="doctrine.cache_clear_result_command" type="service" id="doctrine.cache_clear_result_command"/>
+        <argument key="doctrine.cache_collection_region_command" type="service" id="doctrine.cache_collection_region_command"/>
+        <argument key="doctrine.clear_entity_region_command" type="service" id="doctrine.clear_entity_region_command"/>
+        <argument key="doctrine.clear_query_region_command" type="service" id="doctrine.clear_query_region_command"/>
+        <argument key="doctrine.database_create_command" type="service" id="doctrine.database_create_command"/>
+        <argument key="doctrine.database_drop_command" type="service" id="doctrine.database_drop_command"/>
+        <argument key="doctrine.database_import_command" type="service" id="doctrine.database_import_command"/>
+        <argument key="doctrine.ensure_production_settings_command" type="service" id="doctrine.ensure_production_settings_command"/>
+        <argument key="doctrine.generate_entities_command" type="service" id="doctrine.generate_entities_command"/>
+        <argument key="doctrine.mapping_convert_command" type="service" id="doctrine.mapping_convert_command"/>
+        <argument key="doctrine.mapping_import_command" type="service" id="doctrine.mapping_import_command"/>
+        <argument key="doctrine.mapping_info_command" type="service" id="doctrine.mapping_info_command"/>
+        <argument key="doctrine.query_dql_command" type="service" id="doctrine.query_dql_command"/>
+        <argument key="doctrine.query_sql_command" type="service" id="doctrine.query_sql_command"/>
+        <argument key="doctrine.schema_create_command" type="service" id="doctrine.schema_create_command"/>
+        <argument key="doctrine.schema_drop_command" type="service" id="doctrine.schema_drop_command"/>
+        <argument key="doctrine.schema_update_command" type="service" id="doctrine.schema_update_command"/>
+        <argument key="doctrine.schema_validate_command" type="service" id="doctrine.schema_validate_command"/>
+        <argument key="maker.auto_command.make_auth" type="service" id="maker.auto_command.make_auth"/>
+        <argument key="maker.auto_command.make_command" type="service" id="maker.auto_command.make_command"/>
+        <argument key="maker.auto_command.make_controller" type="service" id="maker.auto_command.make_controller"/>
+        <argument key="maker.auto_command.make_entity" type="service" id="maker.auto_command.make_entity"/>
+        <argument key="maker.auto_command.make_form" type="service" id="maker.auto_command.make_form"/>
+        <argument key="maker.auto_command.make_functional_test" type="service" id="maker.auto_command.make_functional_test"/>
+        <argument key="maker.auto_command.make_serializer_encoder" type="service" id="maker.auto_command.make_serializer_encoder"/>
+        <argument key="maker.auto_command.make_subscriber" type="service" id="maker.auto_command.make_subscriber"/>
+        <argument key="maker.auto_command.make_twig_extension" type="service" id="maker.auto_command.make_twig_extension"/>
+        <argument key="maker.auto_command.make_unit_test" type="service" id="maker.auto_command.make_unit_test"/>
+        <argument key="maker.auto_command.make_validator" type="service" id="maker.auto_command.make_validator"/>
+        <argument key="maker.auto_command.make_voter" type="service" id="maker.auto_command.make_voter"/>
         <argument key="twig.command.debug" type="service" id="twig.command.debug"/>
         <argument key="twig.command.lint" type="service" id="twig.command.lint"/>
       </argument>
@@ -1795,6 +2547,13 @@
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="inline" type="service" id="fragment.renderer.inline"/>
+      </argument>
+    </service>
+    <service id="service_locator.tSyYN0Z" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="App\Repository\CountryRepository" type="service" id="App\Repository\CountryRepository"/>
+        <argument key="App\Repository\LanguageRepository" type="service" id="App\Repository\LanguageRepository"/>
       </argument>
     </service>
     <service id="logger" class="Symfony\Component\HttpKernel\Log\Logger" public="false"/>
@@ -1866,42 +2625,42 @@
       <argument>true</argument>
     </service>
     <service id="cache.app.recorder_inner" class="Symfony\Component\Cache\Adapter\FilesystemAdapter" public="false">
-      <argument>Lk72jNBKVr</argument>
+      <argument>Z4jn5R4MPs</argument>
       <argument>0</argument>
-      <argument>/media/simplon/virtual-hosts/symfony-challenge/var/cache/dev/pools</argument>
+      <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/var/cache/dev/pools</argument>
       <call method="setLogger">
         <argument type="service" id="logger" on-invalid="ignore"/>
       </call>
     </service>
     <service id="cache.system.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
-      <argument>Oh7Dzc1OeZ</argument>
+      <argument>kOkWxLsVkT</argument>
       <argument>0</argument>
-      <argument>+5NX9RAsJNlqieFBTlzSPY</argument>
-      <argument>/media/simplon/virtual-hosts/symfony-challenge/var/cache/dev/pools</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/var/cache/dev/pools</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.validator.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
-      <argument>VXaoS2FsGF</argument>
+      <argument>mE8RBQgazk</argument>
       <argument>0</argument>
-      <argument>+5NX9RAsJNlqieFBTlzSPY</argument>
-      <argument>/media/simplon/virtual-hosts/symfony-challenge/var/cache/dev/pools</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/var/cache/dev/pools</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.serializer.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
-      <argument>LEFLB0i6-2</argument>
+      <argument>rPwnG0yWBK</argument>
       <argument>0</argument>
-      <argument>+5NX9RAsJNlqieFBTlzSPY</argument>
-      <argument>/media/simplon/virtual-hosts/symfony-challenge/var/cache/dev/pools</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/var/cache/dev/pools</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.annotations.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
-      <argument>ZXZw3kdVNf</argument>
+      <argument>xx+3mQJe3j</argument>
       <argument>0</argument>
-      <argument>+5NX9RAsJNlqieFBTlzSPY</argument>
-      <argument>/media/simplon/virtual-hosts/symfony-challenge/var/cache/dev/pools</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/media/simplon/virtual-hosts/Symfony-4-Internationalization-EVENTLISTENER/var/cache/dev/pools</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -1939,6 +2698,31 @@
     <service id="Doctrine\Common\Annotations\Reader" alias="annotations.cached_reader" public="false"/>
     <service id="Twig_Environment" alias="twig" public="false"/>
     <service id="Twig\Environment" alias="twig" public="false"/>
+    <service id="Doctrine\DBAL\Driver\Connection" alias="doctrine.dbal.default_connection" public="false"/>
+    <service id="Doctrine\DBAL\Connection" alias="doctrine.dbal.default_connection" public="false"/>
+    <service id="Doctrine\Common\Persistence\ManagerRegistry" alias="doctrine" public="false"/>
+    <service id="Symfony\Bridge\Doctrine\RegistryInterface" alias="doctrine" public="false"/>
+    <service id="database_connection" alias="doctrine.dbal.default_connection" public="true"/>
+    <service id="doctrine.dbal.event_manager" alias="doctrine.dbal.default_connection.event_manager" public="false"/>
+    <service id="Doctrine\Common\Persistence\ObjectManager" alias="doctrine.orm.default_entity_manager" public="false"/>
+    <service id="Doctrine\ORM\EntityManagerInterface" alias="doctrine.orm.default_entity_manager" public="false"/>
+    <service id="doctrine.orm.metadata.annotation_reader" alias="annotations.cached_reader" public="false"/>
+    <service id="doctrine.orm.entity_manager" alias="doctrine.orm.default_entity_manager" public="true"/>
+    <service id="doctrine.orm.default_metadata_cache" alias="doctrine_cache.providers.doctrine.orm.default_metadata_cache"/>
+    <service id="doctrine.orm.default_result_cache" alias="doctrine_cache.providers.doctrine.orm.default_result_cache"/>
+    <service id="doctrine.orm.default_query_cache" alias="doctrine_cache.providers.doctrine.orm.default_query_cache"/>
+    <service id="doctrine.orm.default_entity_manager.event_manager" alias="doctrine.dbal.default_connection.event_manager" public="false"/>
+    <service id="console.command.public_alias.doctrine_cache.contains_command" alias="doctrine_cache.contains_command" public="true"/>
+    <service id="console.command.public_alias.doctrine_cache.delete_command" alias="doctrine_cache.delete_command" public="true"/>
+    <service id="console.command.public_alias.doctrine_cache.flush_command" alias="doctrine_cache.flush_command" public="true"/>
+    <service id="console.command.public_alias.doctrine_cache.stats_command" alias="doctrine_cache.stats_command" public="true"/>
+    <service id="console.command.public_alias.doctrine_migrations.diff_command" alias="doctrine_migrations.diff_command" public="true"/>
+    <service id="console.command.public_alias.doctrine_migrations.execute_command" alias="doctrine_migrations.execute_command" public="true"/>
+    <service id="console.command.public_alias.doctrine_migrations.generate_command" alias="doctrine_migrations.generate_command" public="true"/>
+    <service id="console.command.public_alias.doctrine_migrations.latest_command" alias="doctrine_migrations.latest_command" public="true"/>
+    <service id="console.command.public_alias.doctrine_migrations.migrate_command" alias="doctrine_migrations.migrate_command" public="true"/>
+    <service id="console.command.public_alias.doctrine_migrations.status_command" alias="doctrine_migrations.status_command" public="true"/>
+    <service id="console.command.public_alias.doctrine_migrations.version_command" alias="doctrine_migrations.version_command" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem" public="false"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="Psr\Log\LoggerInterface" alias="logger" public="false"/>
