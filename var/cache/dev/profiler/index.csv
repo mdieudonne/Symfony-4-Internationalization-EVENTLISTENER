@@ -17,3 +17,8 @@ b0e0db,127.0.0.1,GET,http://france.symfony-challenge.dev/,1516028869,,200
 c23170,127.0.0.1,GET,http://france.symfony-challenge.dev/,1516029071,,200
 3db7f6,127.0.0.1,GET,http://france.symfony-challenge.dev/,1516029151,,200
 cb038d,127.0.0.1,GET,http://france.symfony-challenge.dev/,1516029153,,200
+26031c,127.0.0.1,GET,http://france.symfony-challenge.dev/favicon.ico,1516029602,bf4eb3,200
+bf4eb3,127.0.0.1,GET,http://france.symfony-challenge.dev/favicon.ico,1516029602,,404
+e265cc,127.0.0.1,GET,http://belgique.symfony-challenge.dev/,1516029605,,200
+3ccf84,127.0.0.1,GET,http://belgique.symfony-challenge.dev/favicon.ico,1516029610,588da4,200
+588da4,127.0.0.1,GET,http://belgique.symfony-challenge.dev/favicon.ico,1516029610,,404
